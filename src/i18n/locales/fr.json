@@ -1,0 +1,62 @@
+{
+  "home": {
+    "titleLine1": "Roulette",
+    "titleLine2": "Tram Berne",
+    "subtitle": "Saute dans un tram aléatoire, découvre un nouveau coin de Berne et relève un défi.",
+    "spin": "Lancer la roulette !",
+    "credit": "Données de départ en direct de transport.opendata.ch",
+    "badges": "{{count}} badge",
+    "badgesPlural": "{{count}} badges"
+  },
+  "destination": {
+    "header": "Votre destination",
+    "tramLabel": "Tram {{line}}",
+    "departs": "Départ",
+    "in": "Dans",
+    "now": "Maintenant",
+    "min": "{{n}} min",
+    "platform": "Voie {{p}}",
+    "accept": "Accepter le défi ! 🎯",
+    "respin": "Relancer 🎲",
+    "credit": "Départ en direct depuis Berne gare · transport.opendata.ch"
+  },
+  "challenge": {
+    "header": "Votre défi",
+    "headingTo": "Direction",
+    "departTime": "Départ {{time}}",
+    "now": "maintenant !",
+    "min": "{{n}} min",
+    "alreadyEarned": "Vous avez déjà relevé ce défi !",
+    "alreadyEarnedSub": "Complétez-le à nouveau pour regagner le badge.",
+    "complete": "Défi accompli ! 🏅",
+    "completeAgain": "Recommencer 🔁",
+    "back": "Retour à la destination"
+  },
+  "badges": {
+    "header": "Mes badges",
+    "tramLabel": "Tram {{line}}",
+    "empty": "Pas encore de badges",
+    "emptyHint": "Lancez la roulette, prenez un tram et relevez un défi pour gagner votre premier badge !",
+    "clear": "Effacer tous les badges"
+  },
+  "loading": {
+    "rolling": "On tire les dés…",
+    "fetching": "Récupération des départs de trams",
+    "errorTitle": "Impossible de charger les départs",
+    "noMatchTitle": "Aucun tram trouvé pour l'instant",
+    "noMatchHint": "Aucune de nos lignes de tram n'avait de départs à venir. Réessayez dans quelques minutes !",
+    "retry": "Réessayer",
+    "back": "Retour"
+  },
+  "difficulty": {
+    "easy": "facile",
+    "medium": "moyen",
+    "hard": "difficile"
+  },
+  "type": {
+    "explore": "Explorer",
+    "food": "Manger",
+    "photo": "Photo",
+    "social": "Rencontre"
+  }
+}

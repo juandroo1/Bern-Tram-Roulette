@@ -1,0 +1,62 @@
+{
+  "home": {
+    "titleLine1": "Berner Tram",
+    "titleLine2": "Roulette",
+    "subtitle": "Steig in eine zufällige Tram, entdecke einen neuen Winkel von Bern und meistere eine Herausforderung.",
+    "spin": "Dreh das Roulette!",
+    "credit": "Live-Tramabfahrten von transport.opendata.ch",
+    "badges": "{{count}} Abzeichen",
+    "badgesPlural": "{{count}} Abzeichen"
+  },
+  "destination": {
+    "header": "Dein Ziel",
+    "tramLabel": "Tram {{line}}",
+    "departs": "Abfahrt",
+    "in": "In",
+    "now": "Jetzt",
+    "min": "{{n}} Min.",
+    "platform": "Gleis {{p}}",
+    "accept": "Herausforderung annehmen! 🎯",
+    "respin": "Neu würfeln 🎲",
+    "credit": "Live-Abfahrt ab Bern Bahnhof · transport.opendata.ch"
+  },
+  "challenge": {
+    "header": "Deine Herausforderung",
+    "headingTo": "Ziel",
+    "departTime": "Abfahrt {{time}}",
+    "now": "jetzt!",
+    "min": "{{n}} Min.",
+    "alreadyEarned": "Diese Herausforderung hast du schon gemeistert!",
+    "alreadyEarnedSub": "Schließe sie nochmals ab, um das Abzeichen wieder zu verdienen.",
+    "complete": "Herausforderung abgeschlossen! 🏅",
+    "completeAgain": "Nochmals abschließen 🔁",
+    "back": "Zurück zum Ziel"
+  },
+  "badges": {
+    "header": "Meine Abzeichen",
+    "tramLabel": "Tram {{line}}",
+    "empty": "Noch keine Abzeichen",
+    "emptyHint": "Dreh das Roulette, steig in eine Tram und schließe eine Herausforderung ab, um dein erstes Abzeichen zu verdienen!",
+    "clear": "Alle Abzeichen löschen"
+  },
+  "loading": {
+    "rolling": "Würfeln…",
+    "fetching": "Lade aktuelle Tramabfahrten",
+    "errorTitle": "Abfahrten konnten nicht geladen werden",
+    "noMatchTitle": "Gerade keine passenden Trams",
+    "noMatchHint": "Keine unserer kuratierten Tramlinien hatte bevorstehende Abfahrten. Versuche es in ein paar Minuten erneut!",
+    "retry": "Erneut versuchen",
+    "back": "Zurück"
+  },
+  "difficulty": {
+    "easy": "einfach",
+    "medium": "mittel",
+    "hard": "schwer"
+  },
+  "type": {
+    "explore": "Erkunden",
+    "food": "Essen",
+    "photo": "Foto",
+    "social": "Gespräch"
+  }
+}
