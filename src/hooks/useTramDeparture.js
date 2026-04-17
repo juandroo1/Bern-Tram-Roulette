@@ -2,7 +2,8 @@ import { useState, useCallback } from 'react'
 import challengesData from '../data/challenges.json'
 
 const API_BASE = 'https://transport.opendata.ch/v1'
-const STATION_FROM = 'Bern'
+const BERN_BAHNHOF = 'Bern, Bahnhof'
+const STATIONBOARD_LIMIT = 200
 const SHOWN_DEPARTURES = 3
 const MAX_WAIT_MINUTES = 30
 
@@ -21,44 +22,52 @@ function minutesUntil(isoString) {
 }
 
 /**
- * Fetch the next direct tram connections from Bern to a specific stop.
- * Returns [] on any error or if no direct trams are running.
+ * Fetch the stationboard from Bern Bahnhof once, then match entries against
+ * our curated stops using the exact `to` field from the API.
+ *
+ * Returns an array of { dest, departures } for stops that have at least one
+ * tram departing within MAX_WAIT_MINUTES.
  */
-async function fetchDirectTrams(stop) {
-  try {
-    const url =
-      `${API_BASE}/connections` +
-      `?from=${encodeURIComponent(STATION_FROM)}` +
-      `&to=${encodeURIComponent(stop)}` +
-      `&transportations[]=tram` +
-      `&limit=${SHOWN_DEPARTURES + 6}`
-    const res = await fetch(url)
-    if (!res.ok) return []
-    const { connections = [] } = await res.json()
+async function fetchValidStops() {
+  const url =
+    `${API_BASE}/stationboard` +
+    `?station=${encodeURIComponent(BERN_BAHNHOF)}` +
+    `&limit=${STATIONBOARD_LIMIT}` +
+    `&transportations[]=tram`
 
-    const deps = connections
-      .filter((c) => (c.transfers ?? 1) === 0) // direct tram only
-      .map((c) => {
-        const journey = c.sections?.[0]?.journey ?? {}
-        return {
-          // journey.name gives the human-readable line number (e.g. "6", "8", "9")
-          line: journey.name ?? journey.number ?? '?',
-          to: c.to?.station?.name ?? stop,
-          time: formatTime(c.from?.departure),
-          minutesUntil: minutesUntil(c.from?.departure),
-          delay: c.from?.delay ?? 0,
-          platform: c.from?.platform ?? null,
-        }
-      })
+  const res = await fetch(url)
+  if (!res.ok) throw new Error(`API error: ${res.status}`)
+  const { stationboard = [] } = await res.json()
 
-    // A stop is only valid if the very next departure is within MAX_WAIT_MINUTES.
-    // Once that's confirmed, show up to SHOWN_DEPARTURES — even if later ones
-    // exceed the window, the user has already committed to the destination.
-    if (deps.length === 0 || (deps[0].minutesUntil ?? Infinity) > MAX_WAIT_MINUTES) return []
-    return deps.slice(0, SHOWN_DEPARTURES)
-  } catch {
-    return []
+  // Build a lookup: stationboardTo → list of departure objects (within window)
+  const grouped = new Map()
+  for (const entry of stationboard) {
+    const mins = minutesUntil(entry.stop?.departure)
+    if (mins === null || mins > MAX_WAIT_MINUTES) continue
+
+    const toKey = entry.to
+    if (!grouped.has(toKey)) grouped.set(toKey, [])
+    grouped.get(toKey).push({
+      line: entry.number ?? entry.name ?? '?',
+      to: entry.to,
+      time: formatTime(entry.stop?.departure),
+      minutesUntil: mins,
+      delay: entry.stop?.delay ?? 0,
+      platform: entry.stop?.platform ?? null,
+    })
   }
+
+  // Match grouped departures to curated destinations
+  const valid = []
+  for (const dest of challengesData) {
+    const deps = grouped.get(dest.stationboardTo)
+    if (!deps || deps.length === 0) continue
+    // Already filtered to ≤30 min; sort by departure time and cap at SHOWN_DEPARTURES
+    deps.sort((a, b) => a.minutesUntil - b.minutesUntil)
+    valid.push({ dest, departures: deps.slice(0, SHOWN_DEPARTURES) })
+  }
+
+  return valid
 }
 
 export function useTramDeparture() {
@@ -74,16 +83,7 @@ export function useTramDeparture() {
     setState({ status: 'loading', destination: null, departures: null, challenge: null, error: null })
 
     try {
-      // Query all curated stops in parallel — each gets its own explicit API call
-      // so there's no guessing about which lines stop where.
-      const results = await Promise.all(
-        challengesData.map(async (dest) => ({
-          dest,
-          departures: await fetchDirectTrams(dest.stop),
-        }))
-      )
-
-      const valid = results.filter((r) => r.departures.length > 0)
+      const valid = await fetchValidStops()
 
       if (valid.length === 0) {
         setState({ status: 'no_match', destination: null, departures: null, challenge: null, error: null })

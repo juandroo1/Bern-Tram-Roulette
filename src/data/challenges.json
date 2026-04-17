@@ -1,379 +1,8 @@
 [
   {
-    "id": "brunnen-westside",
-    "stop": "Brünnen Westside",
-    "tramLine": "8",
-    "emoji": "🛍️",
-    "neighborhood": {
-      "en": "Brünnen",
-      "de": "Brünnen",
-      "fr": "Brünnen"
-    },
-    "description": {
-      "en": "A bold architectural landmark in Bern's northwest — the Westside shopping centre designed by Daniel Libeskind.",
-      "de": "Ein kühnes Architekturwahrzeichen im Nordwesten Berns — das Westside-Einkaufszentrum von Daniel Libeskind.",
-      "fr": "Un audacieux repère architectural au nord-ouest de Berne — le centre commercial Westside conçu par Daniel Libeskind."
-    },
-    "challenges": [
-      {
-        "id": "bw-1",
-        "title": {
-          "en": "Libeskind Angles",
-          "de": "Libeskind-Winkel",
-          "fr": "Les angles de Libeskind"
-        },
-        "description": {
-          "en": "Find three surfaces or walls on the Westside building that are at a striking non-right angle. Photograph the most dramatic one.",
-          "de": "Finde drei Flächen oder Wände am Westside-Gebäude, die in einem auffälligen, nicht rechten Winkel stehen. Fotografiere die dramatischste.",
-          "fr": "Trouve trois surfaces ou murs du bâtiment Westside qui forment un angle frappant, non droit. Photographie le plus spectaculaire."
-        },
-        "difficulty": "easy",
-        "type": "photo"
-      },
-      {
-        "id": "bw-2",
-        "title": {
-          "en": "Food Court Roulette",
-          "de": "Food-Court-Roulette",
-          "fr": "Roulette du food court"
-        },
-        "description": {
-          "en": "Go to the food court and order something from a stall you've never tried before. Eat it before you leave.",
-          "de": "Geh zum Food Court und bestell etwas bei einem Stand, bei dem du noch nie bestellt hast. Iss es, bevor du gehst.",
-          "fr": "Rends-toi au food court et commande quelque chose à un stand que tu n'as jamais essayé. Mange-le avant de partir."
-        },
-        "difficulty": "easy",
-        "type": "food"
-      },
-      {
-        "id": "bw-3",
-        "title": {
-          "en": "Highest Point",
-          "de": "Höchster Punkt",
-          "fr": "Le point le plus haut"
-        },
-        "description": {
-          "en": "Find the highest publicly accessible point inside or around the Westside building. Take a photo of the view from there.",
-          "de": "Finde den höchsten öffentlich zugänglichen Punkt innerhalb oder rund um das Westside-Gebäude. Mach ein Foto der Aussicht von dort.",
-          "fr": "Trouve le point accessible au public le plus élevé à l'intérieur ou autour du bâtiment Westside. Prends une photo de la vue depuis cet endroit."
-        },
-        "difficulty": "medium",
-        "type": "explore"
-      },
-      {
-        "id": "bw-4",
-        "title": {
-          "en": "Shop Employee Chat",
-          "de": "Gespräch mit Verkäufer",
-          "fr": "Discussion avec un vendeur"
-        },
-        "description": {
-          "en": "Enter the most unusual-looking shop and ask the employee what the most popular item is. Have a genuine 2-minute conversation.",
-          "de": "Betritt den ungewöhnlichsten Laden und frage die Verkäuferin, was das beliebteste Produkt ist. Führe ein echtes 2-Minuten-Gespräch.",
-          "fr": "Entre dans la boutique la plus originale et demande à l'employé quel est l'article le plus populaire. Engage une vraie conversation de 2 minutes."
-        },
-        "difficulty": "hard",
-        "type": "social"
-      },
-      {
-        "id": "bw-5",
-        "title": {
-          "en": "Outside Escape",
-          "de": "Raus ins Freie",
-          "fr": "L'évasion en plein air"
-        },
-        "description": {
-          "en": "Walk away from the shopping centre and find the nearest patch of nature — a tree, a garden, a stream. Spend 5 minutes there.",
-          "de": "Geh weg vom Einkaufszentrum und finde das nächste Stück Natur — einen Baum, einen Garten, einen Bach. Verbringe 5 Minuten dort.",
-          "fr": "Éloigne-toi du centre commercial et trouve le coin de nature le plus proche — un arbre, un jardin, un ruisseau. Passe 5 minutes là-bas."
-        },
-        "difficulty": "easy",
-        "type": "explore"
-      }
-    ]
-  },
-  {
-    "id": "worb-dorf",
-    "stop": "Worb Dorf",
-    "tramLine": "6",
-    "emoji": "🏰",
-    "neighborhood": {
-      "en": "Worb",
-      "de": "Worb",
-      "fr": "Worb"
-    },
-    "description": {
-      "en": "A village at the end of the line with a medieval castle overlooking the valley.",
-      "de": "Ein Dorf am Ende der Linie mit einer mittelalterlichen Burg, die das Tal überblickt.",
-      "fr": "Un village en bout de ligne avec un château médiéval qui domine la vallée."
-    },
-    "challenges": [
-      {
-        "id": "wd-1",
-        "title": {
-          "en": "Castle Silhouette",
-          "de": "Burgsilhouette",
-          "fr": "Silhouette du château"
-        },
-        "description": {
-          "en": "Find a viewpoint where you can photograph Worb Castle. Extra points if you catch it with the Bernese Alps in the background.",
-          "de": "Finde einen Aussichtspunkt, von dem du Schloss Worb fotografieren kannst. Extra-Punkte, wenn die Berner Alpen im Hintergrund zu sehen sind.",
-          "fr": "Trouve un point de vue pour photographier le château de Worb. Bonus si tu captures les Alpes bernoises en arrière-plan."
-        },
-        "difficulty": "easy",
-        "type": "photo"
-      },
-      {
-        "id": "wd-2",
-        "title": {
-          "en": "River Worble",
-          "de": "Fluss Worble",
-          "fr": "La Worble"
-        },
-        "description": {
-          "en": "Locate the Worble river and walk along it for at least 5 minutes. Find something that surprises you — a bird, a fish, an unexpected structure.",
-          "de": "Finde die Worble und wandere mindestens 5 Minuten an ihr entlang. Entdecke etwas Überraschendes — einen Vogel, einen Fisch, eine unerwartete Struktur.",
-          "fr": "Localise la Worble et longe-la pendant au moins 5 minutes. Trouve quelque chose qui te surprend — un oiseau, un poisson, une structure inattendue."
-        },
-        "difficulty": "medium",
-        "type": "explore"
-      },
-      {
-        "id": "wd-3",
-        "title": {
-          "en": "Village Bench",
-          "de": "Dorfbank",
-          "fr": "Le banc du village"
-        },
-        "description": {
-          "en": "Find a public bench in the village center, sit down for 5 minutes, and write three observations about the people passing by.",
-          "de": "Finde eine öffentliche Bank im Dorfzentrum, setz dich 5 Minuten hin und notiere drei Beobachtungen über die vorbeilaufenden Menschen.",
-          "fr": "Trouve un banc public au centre du village, assieds-toi 5 minutes et note trois observations sur les passants."
-        },
-        "difficulty": "easy",
-        "type": "social"
-      },
-      {
-        "id": "wd-4",
-        "title": {
-          "en": "Farm Stand",
-          "de": "Hofstand",
-          "fr": "L'étal de la ferme"
-        },
-        "description": {
-          "en": "Find an unattended farm stand (Hofladen) with honor-system payment and buy something from it.",
-          "de": "Finde einen unbeaufsichtigten Hofstand mit Vertrauenskasse und kaufe etwas davon.",
-          "fr": "Trouve un étal de ferme non surveillé avec paiement sur l'honneur et achète quelque chose."
-        },
-        "difficulty": "medium",
-        "type": "food"
-      },
-      {
-        "id": "wd-5",
-        "title": {
-          "en": "Church Bell",
-          "de": "Kirchenglocke",
-          "fr": "Le clocher"
-        },
-        "description": {
-          "en": "Find the village church and wait for the next bell chime. Count the strikes and figure out what time they say.",
-          "de": "Finde die Dorfkirche und warte auf das nächste Glockenschlagen. Zähle die Schläge und heraus, welche Uhrzeit sie anzeigen.",
-          "fr": "Trouve l'église du village et attends le prochain coup de cloche. Compte les coups et détermine quelle heure ils indiquent."
-        },
-        "difficulty": "easy",
-        "type": "explore"
-      }
-    ]
-  },
-  {
-    "id": "bümpliz-nord",
-    "stop": "Bümpliz Nord",
-    "tramLine": "8",
-    "emoji": "🎨",
-    "neighborhood": {
-      "en": "Bümpliz",
-      "de": "Bümpliz",
-      "fr": "Bümpliz"
-    },
-    "description": {
-      "en": "A multicultural district with vibrant street art and a strong community spirit.",
-      "de": "Ein multikultureller Stadtteil mit lebhafter Straßenkunst und starkem Gemeinschaftsgefühl.",
-      "fr": "Un quartier multiculturel avec des arts de rue vibrants et un fort esprit communautaire."
-    },
-    "challenges": [
-      {
-        "id": "bn-1",
-        "title": {
-          "en": "Street Art Safari",
-          "de": "Straßenkunst-Safari",
-          "fr": "Safari street art"
-        },
-        "description": {
-          "en": "Find three pieces of street art or murals within a 500m radius. Photograph each one and rank them by your favorite.",
-          "de": "Finde drei Street-Art-Werke oder Wandbilder im Umkreis von 500 m. Fotografiere jedes und wähle deinen Favoriten.",
-          "fr": "Trouve trois œuvres de street art ou murales dans un rayon de 500 m. Photographie chacune et classe-les selon tes préférences."
-        },
-        "difficulty": "medium",
-        "type": "photo"
-      },
-      {
-        "id": "bn-2",
-        "title": {
-          "en": "Five Languages",
-          "de": "Fünf Sprachen",
-          "fr": "Cinq langues"
-        },
-        "description": {
-          "en": "Walk around the neighborhood and collect greetings in five different languages from shop signs, menus, or people you meet.",
-          "de": "Geh durch das Viertel und sammle Begrüßungen in fünf verschiedenen Sprachen auf Ladenschildern, Speisekarten oder von Menschen, die du triffst.",
-          "fr": "Parcours le quartier et collecte des salutations en cinq langues différentes sur des enseignes, des menus ou de gens que tu rencontres."
-        },
-        "difficulty": "medium",
-        "type": "social"
-      },
-      {
-        "id": "bn-3",
-        "title": {
-          "en": "International Bite",
-          "de": "Internationaler Bissen",
-          "fr": "La bouchée internationale"
-        },
-        "description": {
-          "en": "Find a restaurant or takeaway serving food from a country you've never visited and order something from their menu.",
-          "de": "Finde ein Restaurant oder Imbiss, das Speisen aus einem Land serviert, das du noch nie besucht hast, und bestelle etwas von der Karte.",
-          "fr": "Trouve un restaurant ou un snack servant de la nourriture d'un pays que tu n'as jamais visité et commande quelque chose au menu."
-        },
-        "difficulty": "easy",
-        "type": "food"
-      },
-      {
-        "id": "bn-4",
-        "title": {
-          "en": "Playground Theory",
-          "de": "Spielplatz-Theorie",
-          "fr": "La théorie du terrain de jeux"
-        },
-        "description": {
-          "en": "Find a playground and observe the equipment. What's the most creative piece? How old do you think it is?",
-          "de": "Finde einen Spielplatz und schau dir die Geräte an. Was ist das kreativste Stück? Wie alt denkst du, ist es?",
-          "fr": "Trouve une aire de jeux et observe les équipements. Quel est l'élément le plus créatif ? Quel âge penses-tu qu'il a ?"
-        },
-        "difficulty": "easy",
-        "type": "explore"
-      },
-      {
-        "id": "bn-5",
-        "title": {
-          "en": "Corner Shop",
-          "de": "Eckkiosk",
-          "fr": "L'épicerie du coin"
-        },
-        "description": {
-          "en": "Find the most interesting small corner shop, step inside and strike up a conversation with the person behind the counter.",
-          "de": "Finde den interessantesten kleinen Eckladen, tritt ein und komm mit der Person hinter dem Tresen ins Gespräch.",
-          "fr": "Trouve le petit magasin du coin le plus intéressant, entre et engage la conversation avec la personne derrière le comptoir."
-        },
-        "difficulty": "hard",
-        "type": "social"
-      }
-    ]
-  },
-  {
-    "id": "wankdorf",
-    "stop": "Bern Wankdorf, Bahnhof",
-    "tramLine": "9",
-    "emoji": "⚽",
-    "neighborhood": {
-      "en": "Wankdorf",
-      "de": "Wankdorf",
-      "fr": "Wankdorf"
-    },
-    "description": {
-      "en": "Home to YB's stadium and a sprawling urban district under constant transformation.",
-      "de": "Heimat des YB-Stadions und eines weitläufigen Stadtteils im ständigen Wandel.",
-      "fr": "Le quartier du stade de YB, en pleine transformation urbaine."
-    },
-    "challenges": [
-      {
-        "id": "wk-1",
-        "title": {
-          "en": "Yellow & Black Spotter",
-          "de": "YB-Spotter",
-          "fr": "Le chasseur de supporters YB"
-        },
-        "description": {
-          "en": "Spot someone wearing BSC Young Boys colors (yellow and black). If they look friendly, give them a thumbs up.",
-          "de": "Entdecke jemanden in BSC Young Boys-Farben (Gelb und Schwarz). Wenn sie freundlich aussehen, gib ihnen einen Daumen hoch.",
-          "fr": "Repère quelqu'un portant les couleurs du BSC Young Boys (jaune et noir). S'ils ont l'air sympas, fais-leur un pouce levé."
-        },
-        "difficulty": "easy",
-        "type": "social"
-      },
-      {
-        "id": "wk-2",
-        "title": {
-          "en": "Stadium Selfie",
-          "de": "Stadion-Selfie",
-          "fr": "Selfie devant le stade"
-        },
-        "description": {
-          "en": "Get as close to the Wankdorf stadium as you can and take a selfie with it. Bonus if a tram is visible in the frame.",
-          "de": "Geh so nah wie möglich ans Wankdorf-Stadion heran und mach ein Selfie. Bonus, wenn eine Tram im Bild zu sehen ist.",
-          "fr": "Approche-toi le plus possible du stade de Wankdorf et prends un selfie. Bonus si un tram est visible dans le cadre."
-        },
-        "difficulty": "easy",
-        "type": "photo"
-      },
-      {
-        "id": "wk-3",
-        "title": {
-          "en": "Under Construction",
-          "de": "Baustelle",
-          "fr": "En construction"
-        },
-        "description": {
-          "en": "Find an active construction site. Read the permit board if there is one — what is being built and when does it finish?",
-          "de": "Finde eine aktive Baustelle. Lies das Baugenehmigungsschild, falls vorhanden — was wird gebaut und wann ist es fertig?",
-          "fr": "Trouve un chantier actif. Lis le panneau de permis s'il y en a un — qu'est-ce qui est construit et quand sera-ce fini ?"
-        },
-        "difficulty": "medium",
-        "type": "explore"
-      },
-      {
-        "id": "wk-4",
-        "title": {
-          "en": "Migros vs Coop",
-          "de": "Migros gegen Coop",
-          "fr": "Migros contre Coop"
-        },
-        "description": {
-          "en": "Find one Migros AND one Coop within 10 minutes of walking. Compare the price of the same item in each store.",
-          "de": "Finde innerhalb von 10 Gehminuten eine Migros UND eine Coop. Vergleiche den Preis desselben Artikels in beiden Läden.",
-          "fr": "Trouve un Migros ET un Coop en 10 minutes à pied. Compare le prix du même article dans chaque magasin."
-        },
-        "difficulty": "medium",
-        "type": "explore"
-      },
-      {
-        "id": "wk-5",
-        "title": {
-          "en": "Tram Watch",
-          "de": "Tram-Beobachtung",
-          "fr": "Observation des trams"
-        },
-        "description": {
-          "en": "Return to the tram stop and watch three trams pass. Note which lines they are and photograph the most interesting-looking one.",
-          "de": "Kehre zur Tramhaltestelle zurück und beobachte drei vorbeifahrende Trams. Notiere die Linien und fotografiere die interessanteste.",
-          "fr": "Retourne à l'arrêt de tram et regarde passer trois trams. Note les lignes et photographie le plus intéressant."
-        },
-        "difficulty": "easy",
-        "type": "photo"
-      }
-    ]
-  },
-  {
     "id": "fischermätteli",
     "stop": "Fischermätteli",
+    "stationboardTo": "Bern, Fischermätteli",
     "tramLine": "6",
     "emoji": "🎪",
     "neighborhood": {
@@ -389,11 +18,7 @@
     "challenges": [
       {
         "id": "fm-1",
-        "title": {
-          "en": "Dog Count",
-          "de": "Hundezählung",
-          "fr": "Compte les chiens"
-        },
+        "title": { "en": "Dog Count", "de": "Hundezählung", "fr": "Compte les chiens" },
         "description": {
           "en": "Spend 10 minutes near the tram stop and count every dog that walks by. Bonus: learn one dog's name.",
           "de": "Verbringe 10 Minuten in der Nähe der Haltestelle und zähle jeden vorbeilaufenden Hund. Bonus: Erfahre den Namen eines Hundes.",
@@ -404,11 +29,7 @@
       },
       {
         "id": "fm-2",
-        "title": {
-          "en": "Parklife",
-          "de": "Parkleben",
-          "fr": "La vie du parc"
-        },
+        "title": { "en": "Parklife", "de": "Parkleben", "fr": "La vie du parc" },
         "description": {
           "en": "Find a patch of green space and observe what people are doing in it. List at least four different activities.",
           "de": "Finde ein Stück Grünfläche und beobachte, was die Menschen dort machen. Liste mindestens vier verschiedene Aktivitäten auf.",
@@ -419,13 +40,9 @@
       },
       {
         "id": "fm-3",
-        "title": {
-          "en": "Sound Map",
-          "de": "Klangkarte",
-          "fr": "La carte sonore"
-        },
+        "title": { "en": "Sound Map", "de": "Klangkarte", "fr": "La carte sonore" },
         "description": {
-          "en": "Stand still for 2 minutes with your eyes closed. Identify five distinct sounds you hear. What story do they tell about this place?",
+          "en": "Stand still for 2 minutes with your eyes closed. Identify five distinct sounds. What story do they tell about this place?",
           "de": "Steh 2 Minuten still mit geschlossenen Augen. Erkenne fünf verschiedene Geräusche. Welche Geschichte erzählen sie über diesen Ort?",
           "fr": "Tiens-toi immobile pendant 2 minutes les yeux fermés. Identifie cinq sons distincts. Quelle histoire racontent-ils sur cet endroit ?"
         },
@@ -434,11 +51,7 @@
       },
       {
         "id": "fm-4",
-        "title": {
-          "en": "Window Garden",
-          "de": "Fenstergarten",
-          "fr": "Le jardin de fenêtre"
-        },
+        "title": { "en": "Window Garden", "de": "Fenstergarten", "fr": "Le jardin de fenêtre" },
         "description": {
           "en": "Walk one block and find the most impressive window box or balcony garden. Photograph it — what plants can you name?",
           "de": "Geh einen Block entlang und finde die beeindruckendste Blumenampel oder den schönsten Balkon. Fotografiere ihn — welche Pflanzen kannst du benennen?",
@@ -449,11 +62,7 @@
       },
       {
         "id": "fm-5",
-        "title": {
-          "en": "Bakery Quest",
-          "de": "Bäckerei-Suche",
-          "fr": "La quête de la boulangerie"
-        },
+        "title": { "en": "Bakery Quest", "de": "Bäckerei-Suche", "fr": "La quête de la boulangerie" },
         "description": {
           "en": "Find a traditional Swiss bakery and order a Gipfeli or Butterzopf. Eat it before you get back on the tram.",
           "de": "Finde eine traditionelle Schweizer Bäckerei und bestell ein Gipfeli oder Butterzopf. Iss es, bevor du wieder in die Tram steigst.",
@@ -461,6 +70,302 @@
         },
         "difficulty": "easy",
         "type": "food"
+      }
+    ]
+  },
+  {
+    "id": "brunnen-westside",
+    "stop": "Brünnen Westside",
+    "stationboardTo": "Bern Brünnen Westside, Bahnhof",
+    "tramLine": "8",
+    "emoji": "🛍️",
+    "neighborhood": {
+      "en": "Brünnen",
+      "de": "Brünnen",
+      "fr": "Brünnen"
+    },
+    "description": {
+      "en": "A bold architectural landmark in Bern's northwest — the Westside shopping centre designed by Daniel Libeskind.",
+      "de": "Ein kühnes Architekturwahrzeichen im Nordwesten Berns — das Westside-Einkaufszentrum von Daniel Libeskind.",
+      "fr": "Un audacieux repère architectural au nord-ouest de Berne — le centre commercial Westside conçu par Daniel Libeskind."
+    },
+    "challenges": [
+      {
+        "id": "bw-1",
+        "title": { "en": "Libeskind Angles", "de": "Libeskind-Winkel", "fr": "Les angles de Libeskind" },
+        "description": {
+          "en": "Find three surfaces on the Westside building that are at a striking non-right angle. Photograph the most dramatic one.",
+          "de": "Finde drei Flächen am Westside-Gebäude, die in einem auffälligen, nicht rechten Winkel stehen. Fotografiere die dramatischste.",
+          "fr": "Trouve trois surfaces du bâtiment Westside formant un angle frappant. Photographie la plus spectaculaire."
+        },
+        "difficulty": "easy",
+        "type": "photo"
+      },
+      {
+        "id": "bw-2",
+        "title": { "en": "Food Court Roulette", "de": "Food-Court-Roulette", "fr": "Roulette du food court" },
+        "description": {
+          "en": "Go to the food court and order something from a stall you've never tried before. Eat it before you leave.",
+          "de": "Geh zum Food Court und bestell etwas bei einem Stand, bei dem du noch nie bestellt hast. Iss es, bevor du gehst.",
+          "fr": "Rends-toi au food court et commande quelque chose à un stand que tu n'as jamais essayé. Mange-le avant de partir."
+        },
+        "difficulty": "easy",
+        "type": "food"
+      },
+      {
+        "id": "bw-3",
+        "title": { "en": "Highest Point", "de": "Höchster Punkt", "fr": "Le point le plus haut" },
+        "description": {
+          "en": "Find the highest publicly accessible point inside or around Westside. Take a photo of the view from there.",
+          "de": "Finde den höchsten öffentlich zugänglichen Punkt innerhalb oder rund um das Westside-Gebäude. Mach ein Foto der Aussicht von dort.",
+          "fr": "Trouve le point accessible le plus élevé à l'intérieur ou autour du bâtiment Westside. Prends une photo de la vue."
+        },
+        "difficulty": "medium",
+        "type": "explore"
+      },
+      {
+        "id": "bw-4",
+        "title": { "en": "Shop Employee Chat", "de": "Gespräch mit Verkäufer", "fr": "Discussion avec un vendeur" },
+        "description": {
+          "en": "Enter the most unusual-looking shop and ask the employee what the most popular item is. Have a genuine 2-minute conversation.",
+          "de": "Betritt den ungewöhnlichsten Laden und frage die Verkäuferin, was das beliebteste Produkt ist. Führe ein echtes 2-Minuten-Gespräch.",
+          "fr": "Entre dans la boutique la plus originale et demande à l'employé quel est l'article le plus populaire. Engage une vraie conversation de 2 minutes."
+        },
+        "difficulty": "hard",
+        "type": "social"
+      },
+      {
+        "id": "bw-5",
+        "title": { "en": "Outside Escape", "de": "Raus ins Freie", "fr": "L'évasion en plein air" },
+        "description": {
+          "en": "Walk away from the shopping centre and find the nearest patch of nature — a tree, a garden, a stream. Spend 5 minutes there.",
+          "de": "Geh weg vom Einkaufszentrum und finde das nächste Stück Natur — einen Baum, einen Garten, einen Bach. Verbringe 5 Minuten dort.",
+          "fr": "Éloigne-toi du centre commercial et trouve le coin de nature le plus proche — un arbre, un jardin, un ruisseau. Passe 5 minutes là-bas."
+        },
+        "difficulty": "easy",
+        "type": "explore"
+      }
+    ]
+  },
+  {
+    "id": "worb-dorf",
+    "stop": "Worb Dorf",
+    "stationboardTo": "Worb Dorf",
+    "tramLine": "6",
+    "emoji": "🏰",
+    "neighborhood": {
+      "en": "Worb",
+      "de": "Worb",
+      "fr": "Worb"
+    },
+    "description": {
+      "en": "A village at the end of the line with a medieval castle overlooking the valley.",
+      "de": "Ein Dorf am Ende der Linie mit einer mittelalterlichen Burg, die das Tal überblickt.",
+      "fr": "Un village en bout de ligne avec un château médiéval qui domine la vallée."
+    },
+    "challenges": [
+      {
+        "id": "wd-1",
+        "title": { "en": "Castle Silhouette", "de": "Burgsilhouette", "fr": "Silhouette du château" },
+        "description": {
+          "en": "Find a viewpoint where you can photograph Worb Castle. Extra points if you catch it with the Bernese Alps in the background.",
+          "de": "Finde einen Aussichtspunkt, von dem du Schloss Worb fotografieren kannst. Extra-Punkte, wenn die Berner Alpen im Hintergrund zu sehen sind.",
+          "fr": "Trouve un point de vue pour photographier le château de Worb. Bonus si tu captures les Alpes bernoises en arrière-plan."
+        },
+        "difficulty": "easy",
+        "type": "photo"
+      },
+      {
+        "id": "wd-2",
+        "title": { "en": "River Worble", "de": "Fluss Worble", "fr": "La Worble" },
+        "description": {
+          "en": "Locate the Worble river and walk along it for at least 5 minutes. Find something that surprises you — a bird, a fish, an unexpected structure.",
+          "de": "Finde die Worble und wandere mindestens 5 Minuten an ihr entlang. Entdecke etwas Überraschendes — einen Vogel, einen Fisch, eine unerwartete Struktur.",
+          "fr": "Localise la Worble et longe-la pendant au moins 5 minutes. Trouve quelque chose qui te surprend — un oiseau, un poisson, une structure inattendue."
+        },
+        "difficulty": "medium",
+        "type": "explore"
+      },
+      {
+        "id": "wd-3",
+        "title": { "en": "Village Bench", "de": "Dorfbank", "fr": "Le banc du village" },
+        "description": {
+          "en": "Find a public bench in the village center, sit for 5 minutes, and note three observations about the people passing by.",
+          "de": "Finde eine öffentliche Bank im Dorfzentrum, setz dich 5 Minuten hin und notiere drei Beobachtungen über die vorbeilaufenden Menschen.",
+          "fr": "Trouve un banc public au centre du village, assieds-toi 5 minutes et note trois observations sur les passants."
+        },
+        "difficulty": "easy",
+        "type": "social"
+      },
+      {
+        "id": "wd-4",
+        "title": { "en": "Farm Stand", "de": "Hofstand", "fr": "L'étal de la ferme" },
+        "description": {
+          "en": "Find an unattended farm stand (Hofladen) with honor-system payment and buy something from it.",
+          "de": "Finde einen unbeaufsichtigten Hofstand mit Vertrauenskasse und kaufe etwas davon.",
+          "fr": "Trouve un étal de ferme non surveillé avec paiement sur l'honneur et achète quelque chose."
+        },
+        "difficulty": "medium",
+        "type": "food"
+      },
+      {
+        "id": "wd-5",
+        "title": { "en": "Church Bell", "de": "Kirchenglocke", "fr": "Le clocher" },
+        "description": {
+          "en": "Find the village church and wait for the next bell chime. Count the strikes and figure out what time they say.",
+          "de": "Finde die Dorfkirche und warte auf das nächste Glockenschlagen. Zähle die Schläge und heraus, welche Uhrzeit sie anzeigen.",
+          "fr": "Trouve l'église du village et attends le prochain coup de cloche. Compte les coups et détermine quelle heure ils indiquent."
+        },
+        "difficulty": "easy",
+        "type": "explore"
+      }
+    ]
+  },
+  {
+    "id": "ostring",
+    "stop": "Ostring",
+    "stationboardTo": "Bern, Ostring",
+    "tramLine": "7",
+    "emoji": "🏛️",
+    "neighborhood": {
+      "en": "Ostring",
+      "de": "Ostring",
+      "fr": "Ostring"
+    },
+    "description": {
+      "en": "Eastern Bern where old city fortifications meet leafy suburbs — history at the edge of the ring road.",
+      "de": "Das östliche Bern, wo alte Stadtbefestigungen auf begrünte Vorstädte treffen — Geschichte am Stadtrand.",
+      "fr": "L'est de Berne où les anciennes fortifications rencontrent les faubourgs verdoyants — de l'histoire en bordure de la ceinture."
+    },
+    "challenges": [
+      {
+        "id": "os-1",
+        "title": { "en": "Old Wall Hunt", "de": "Mauersuche", "fr": "La chasse aux remparts" },
+        "description": {
+          "en": "Find a remnant of Bern's old city fortifications — a wall, tower, or gate. Photograph it and estimate how old it is.",
+          "de": "Finde ein Überbleibsel der alten Stadtbefestigungen Berns — eine Mauer, einen Turm oder ein Tor. Fotografiere es und schätze sein Alter.",
+          "fr": "Trouve un vestige des anciennes fortifications de Berne — un mur, une tour ou une porte. Photographie-le et estime son âge."
+        },
+        "difficulty": "medium",
+        "type": "explore"
+      },
+      {
+        "id": "os-2",
+        "title": { "en": "Cemetery Stroll", "de": "Friedhofsgang", "fr": "Promenade au cimetière" },
+        "description": {
+          "en": "Find the nearest cemetery and walk through it for 5 minutes. Find the oldest visible gravestone date.",
+          "de": "Finde den nächsten Friedhof und geh 5 Minuten hindurch. Finde das älteste sichtbare Grabsteinddatum.",
+          "fr": "Trouve le cimetière le plus proche et traverse-le pendant 5 minutes. Trouve la date la plus ancienne sur une pierre tombale."
+        },
+        "difficulty": "easy",
+        "type": "explore"
+      },
+      {
+        "id": "os-3",
+        "title": { "en": "Neighbour's Garden", "de": "Nachbarsgarten", "fr": "Le jardin du voisin" },
+        "description": {
+          "en": "Walk one block and find the most lovingly maintained private garden visible from the street. What makes it special?",
+          "de": "Geh einen Block entlang und finde den liebevollst gepflegten Privatgarten, der von der Straße aus sichtbar ist. Was macht ihn besonders?",
+          "fr": "Marche un pâté de maisons et trouve le jardin privé le mieux entretenu visible depuis la rue. Qu'est-ce qui le rend spécial ?"
+        },
+        "difficulty": "easy",
+        "type": "photo"
+      },
+      {
+        "id": "os-4",
+        "title": { "en": "Corner Café", "de": "Eckcafé", "fr": "Le café du coin" },
+        "description": {
+          "en": "Find a local café (not a chain) and order something hot. Strike up a conversation with the person next to you.",
+          "de": "Finde ein lokales Café (keine Kette) und bestell etwas Heißes. Komm mit der Person neben dir ins Gespräch.",
+          "fr": "Trouve un café local (pas une chaîne) et commande quelque chose de chaud. Engage la conversation avec la personne à côté de toi."
+        },
+        "difficulty": "medium",
+        "type": "social"
+      },
+      {
+        "id": "os-5",
+        "title": { "en": "Steepest Street", "de": "Steilste Straße", "fr": "La rue la plus raide" },
+        "description": {
+          "en": "Explore the streets around Ostring and find what you think is the steepest one. Walk up and down it once.",
+          "de": "Erkunde die Straßen rund um den Ostring und finde die steilste. Geh sie einmal hoch und wieder runter.",
+          "fr": "Explore les rues autour de l'Ostring et trouve celle qui te semble la plus raide. Monte-la et redescends-la une fois."
+        },
+        "difficulty": "medium",
+        "type": "explore"
+      }
+    ]
+  },
+  {
+    "id": "wabern",
+    "stop": "Wabern",
+    "stationboardTo": "Wabern, Tram-Endstation",
+    "tramLine": "9",
+    "emoji": "🌿",
+    "neighborhood": {
+      "en": "Wabern",
+      "de": "Wabern",
+      "fr": "Wabern"
+    },
+    "description": {
+      "en": "A peaceful village at the foot of the Gurten, Bern's local mountain — green, quiet, and surprisingly close to the city.",
+      "de": "Ein ruhiges Dorf am Fuß des Gurtens, Berns Hausberg — grün, still und überraschend nah an der Stadt.",
+      "fr": "Un village paisible au pied du Gurten, la montagne locale de Berne — vert, calme et étonnamment proche de la ville."
+    },
+    "challenges": [
+      {
+        "id": "wa-1",
+        "title": { "en": "Gurten Frame", "de": "Gurten-Bild", "fr": "Le cadre du Gurten" },
+        "description": {
+          "en": "Find a spot where you can see the Gurten hill clearly. Frame it with something in the foreground — a tree, a fence, a flower — and photograph it.",
+          "de": "Finde einen Platz, von dem du den Gurten gut siehst. Rahme ihn mit etwas im Vordergrund ein — einem Baum, einem Zaun, einer Blume — und fotografiere ihn.",
+          "fr": "Trouve un endroit d'où tu vois clairement le Gurten. Cadre-le avec quelque chose au premier plan — un arbre, une clôture, une fleur — et photographie."
+        },
+        "difficulty": "easy",
+        "type": "photo"
+      },
+      {
+        "id": "wa-2",
+        "title": { "en": "Village Shop", "de": "Dorfladen", "fr": "L'épicerie du village" },
+        "description": {
+          "en": "Find the most local-feeling shop in Wabern and buy one item you'd never normally pick up. What is it?",
+          "de": "Finde den lokalsten Laden in Wabern und kaufe ein Produkt, das du normalerweise nie greifen würdest. Was ist es?",
+          "fr": "Trouve le magasin le plus local de Wabern et achète un article que tu ne prendrais jamais normalement. Qu'est-ce que c'est ?"
+        },
+        "difficulty": "easy",
+        "type": "food"
+      },
+      {
+        "id": "wa-3",
+        "title": { "en": "Allotment Watch", "de": "Schrebergarten-Beobachtung", "fr": "Observation des jardins" },
+        "description": {
+          "en": "Find an allotment garden or community garden. Count how many different vegetables or flowers you can identify from the path.",
+          "de": "Finde einen Schrebergarten oder Gemeinschaftsgarten. Zähle, wie viele verschiedene Gemüse oder Blumen du vom Weg aus erkennen kannst.",
+          "fr": "Trouve un jardin ouvrier ou un jardin communautaire. Compte combien de légumes ou de fleurs différents tu peux identifier depuis le chemin."
+        },
+        "difficulty": "easy",
+        "type": "explore"
+      },
+      {
+        "id": "wa-4",
+        "title": { "en": "Aare View", "de": "Aare-Blick", "fr": "Vue sur l'Aar" },
+        "description": {
+          "en": "Walk toward the Aare river. Find a spot where you can see or hear it, sit for 3 minutes, and describe what you notice.",
+          "de": "Geh in Richtung Aare. Finde einen Platz, von dem du sie sehen oder hören kannst, sitz 3 Minuten und beschreibe, was du bemerkst.",
+          "fr": "Marche vers l'Aar. Trouve un endroit d'où tu peux la voir ou l'entendre, assieds-toi 3 minutes et décris ce que tu remarques."
+        },
+        "difficulty": "medium",
+        "type": "explore"
+      },
+      {
+        "id": "wa-5",
+        "title": { "en": "Local Greeting", "de": "Lokaler Gruß", "fr": "La salutation locale" },
+        "description": {
+          "en": "Walk around Wabern and greet five people you pass. Count how many greet you back. What's the ratio?",
+          "de": "Geh durch Wabern und grüß fünf Menschen, denen du begegnest. Zähle, wie viele zurückgrüßen. Was ist die Quote?",
+          "fr": "Parcours Wabern et salue cinq personnes que tu croises. Compte combien te répondent. Quel est le ratio ?"
+        },
+        "difficulty": "easy",
+        "type": "social"
       }
     ]
   }
