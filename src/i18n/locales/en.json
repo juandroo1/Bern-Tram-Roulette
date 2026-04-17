@@ -18,7 +18,8 @@
     "platform": "Platform {{p}}",
     "accept": "Accept the Challenge! 🎯",
     "respin": "Respin 🎲",
-    "credit": "Live departure from Bern Bahnhof · transport.opendata.ch"
+    "nextDepartures": "Next departures",
+    "credit": "Live departures from Bern Bahnhof · transport.opendata.ch"
   },
   "challenge": {
     "header": "Your Challenge",

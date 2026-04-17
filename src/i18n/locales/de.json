@@ -18,7 +18,8 @@
     "platform": "Gleis {{p}}",
     "accept": "Herausforderung annehmen! 🎯",
     "respin": "Neu würfeln 🎲",
-    "credit": "Live-Abfahrt ab Bern Bahnhof · transport.opendata.ch"
+    "nextDepartures": "Nächste Abfahrten",
+    "credit": "Live-Abfahrten ab Bern Bahnhof · transport.opendata.ch"
   },
   "challenge": {
     "header": "Deine Herausforderung",

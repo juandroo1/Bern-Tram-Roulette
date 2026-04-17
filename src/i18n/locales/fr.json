@@ -18,7 +18,8 @@
     "platform": "Voie {{p}}",
     "accept": "Accepter le défi ! 🎯",
     "respin": "Relancer 🎲",
-    "credit": "Départ en direct depuis Berne gare · transport.opendata.ch"
+    "nextDepartures": "Prochains départs",
+    "credit": "Départs en direct depuis Berne gare · transport.opendata.ch"
   },
   "challenge": {
     "header": "Votre défi",

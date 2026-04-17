@@ -14,7 +14,8 @@ const DIFFICULTY_COLORS = {
   hard: 'bg-red-100 text-red-700',
 }
 
-export default function ChallengeScreen({ destination, challenge, departure, alreadyEarned, onComplete, onBack }) {
+export default function ChallengeScreen({ destination, challenge, nextDeparture, alreadyEarned, onComplete, onBack }) {
+  const departure = nextDeparture
   const { t, tObj } = useTranslation()
 
   return (

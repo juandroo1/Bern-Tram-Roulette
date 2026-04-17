@@ -1,9 +1,32 @@
 import { useTranslation } from '../i18n/index.jsx'
 import LangSwitcher from '../components/LangSwitcher.jsx'
 
-export default function DestinationScreen({ destination, departure, onAccept, onRespin, onBack }) {
+function DepartureRow({ dep, isFirst, t }) {
+  return (
+    <div className={`flex items-center justify-between gap-3 ${isFirst ? '' : 'opacity-70'}`}>
+      <div className="flex items-center gap-2">
+        <span className="bg-yellow-400 text-red-800 font-bold px-2 py-0.5 rounded text-sm tabular-nums min-w-[3rem] text-center">
+          {t('destination.tramLabel', { line: dep.line })}
+        </span>
+        {dep.delay > 0 && (
+          <span className="text-orange-300 text-xs font-medium">+{dep.delay}'</span>
+        )}
+      </div>
+      <div className="flex items-center gap-3">
+        <span className="text-white/70 text-sm tabular-nums">
+          {dep.minutesUntil < 1 ? t('destination.now') : t('destination.min', { n: dep.minutesUntil })}
+        </span>
+        <span className={`font-bold tabular-nums ${isFirst ? 'text-2xl' : 'text-lg'}`}>
+          {dep.time}
+        </span>
+      </div>
+    </div>
+  )
+}
+
+export default function DestinationScreen({ destination, departures, onAccept, onRespin, onBack }) {
   const { t, tObj } = useTranslation()
-  const delayText = departure.delay > 0 ? ` (+${departure.delay}')` : ''
+  const next = departures[0]
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 text-gray-900">
@@ -15,46 +38,30 @@ export default function DestinationScreen({ destination, departure, onAccept, on
       </div>
 
       <div className="flex-1 flex flex-col gap-4 px-5 py-6 overflow-auto">
-        {/* Tram card */}
+        {/* Tram card with all departures */}
         <div className="bg-red-600 text-white rounded-2xl p-5 shadow">
-          <div className="flex items-start justify-between">
+          {/* Destination header */}
+          <div className="flex items-start justify-between mb-4">
             <div>
-              <div className="flex items-center gap-2 mb-1">
-                <span className="bg-yellow-400 text-red-800 font-bold px-2 py-0.5 rounded text-sm">
-                  {t('destination.tramLabel', { line: departure.line })}
-                </span>
-                {departure.delay > 0 && (
-                  <span className="bg-orange-500 text-white text-xs px-2 py-0.5 rounded">
-                    +{departure.delay} min
-                  </span>
-                )}
-              </div>
-              <h2 className="text-2xl font-bold mt-1">→ {departure.to}</h2>
+              <p className="text-white/70 text-xs uppercase tracking-wide mb-1">
+                {t('destination.nextDepartures')}
+              </p>
+              <h2 className="text-2xl font-bold">→ {next.to}</h2>
+              {next.platform && (
+                <p className="text-white/60 text-xs mt-0.5">
+                  {t('destination.platform', { p: next.platform })}
+                </p>
+              )}
             </div>
             <div className="text-4xl">{destination.emoji}</div>
           </div>
 
-          <div className="mt-4 pt-4 border-t border-white/30 flex items-end justify-between">
-            <div>
-              <p className="text-white/70 text-xs uppercase tracking-wide">{t('destination.departs')}</p>
-              <p className="text-3xl font-bold tabular-nums">
-                {departure.time}{delayText}
-              </p>
-            </div>
-            <div className="text-right">
-              <p className="text-white/70 text-xs uppercase tracking-wide">{t('destination.in')}</p>
-              <p className="text-2xl font-bold">
-                {departure.minutesUntil < 1
-                  ? t('destination.now')
-                  : t('destination.min', { n: departure.minutesUntil })}
-              </p>
-            </div>
+          {/* Departure rows */}
+          <div className="border-t border-white/30 pt-4 flex flex-col gap-3">
+            {departures.map((dep, i) => (
+              <DepartureRow key={`${dep.line}-${dep.time}`} dep={dep} isFirst={i === 0} t={t} />
+            ))}
           </div>
-          {departure.platform && (
-            <p className="text-white/60 text-xs mt-2">
-              {t('destination.platform', { p: departure.platform })}
-            </p>
-          )}
         </div>
 
         {/* Neighborhood info */}
