@@ -1,102 +1,100 @@
 [
   {
-    "id": "weissenbuhl",
-    "stop": "Weissenbühl",
-    "apiMatch": "weissenbühl",
-    "tramLine": "3",
-    "emoji": "🌹",
+    "id": "brunnen-westside",
+    "stop": "Brünnen Westside",
+    "tramLine": "8",
+    "emoji": "🛍️",
     "neighborhood": {
-      "en": "Südquartier",
-      "de": "Südquartier",
-      "fr": "Quartier Sud"
+      "en": "Brünnen",
+      "de": "Brünnen",
+      "fr": "Brünnen"
     },
     "description": {
-      "en": "A quiet residential area with leafy streets and hidden gardens.",
-      "de": "Ein ruhiges Wohnviertel mit baumgesäumten Straßen und versteckten Gärten.",
-      "fr": "Un quartier résidentiel calme avec des rues boisées et des jardins cachés."
+      "en": "A bold architectural landmark in Bern's northwest — the Westside shopping centre designed by Daniel Libeskind.",
+      "de": "Ein kühnes Architekturwahrzeichen im Nordwesten Berns — das Westside-Einkaufszentrum von Daniel Libeskind.",
+      "fr": "Un audacieux repère architectural au nord-ouest de Berne — le centre commercial Westside conçu par Daniel Libeskind."
     },
     "challenges": [
       {
-        "id": "wb-1",
+        "id": "bw-1",
         "title": {
-          "en": "Rose Hunt",
-          "de": "Rosensuche",
-          "fr": "Chasse aux roses"
+          "en": "Libeskind Angles",
+          "de": "Libeskind-Winkel",
+          "fr": "Les angles de Libeskind"
         },
         "description": {
-          "en": "Find a garden or balcony with roses and count how many different colors you can spot. Bonus: ask a local what their favorite variety is.",
-          "de": "Finde einen Garten oder Balkon mit Rosen und zähle, wie viele verschiedene Farben du entdecken kannst. Bonus: Frage eine Anwohnerin, was ihre Lieblingssorte ist.",
-          "fr": "Trouve un jardin ou un balcon avec des roses et compte le nombre de couleurs différentes. Bonus : demande à un habitant quelle est sa variété préférée."
+          "en": "Find three surfaces or walls on the Westside building that are at a striking non-right angle. Photograph the most dramatic one.",
+          "de": "Finde drei Flächen oder Wände am Westside-Gebäude, die in einem auffälligen, nicht rechten Winkel stehen. Fotografiere die dramatischste.",
+          "fr": "Trouve trois surfaces ou murs du bâtiment Westside qui forment un angle frappant, non droit. Photographie le plus spectaculaire."
         },
         "difficulty": "easy",
-        "type": "explore"
+        "type": "photo"
       },
       {
-        "id": "wb-2",
+        "id": "bw-2",
         "title": {
-          "en": "Café Stranger",
-          "de": "Café-Fremder",
-          "fr": "Café étranger"
+          "en": "Food Court Roulette",
+          "de": "Food-Court-Roulette",
+          "fr": "Roulette du food court"
         },
         "description": {
-          "en": "Walk into the nearest café, order something you've never tried before, and sit outside for at least 10 minutes watching the street.",
-          "de": "Betritt das nächste Café, bestell etwas, das du noch nie probiert hast, und sitze mindestens 10 Minuten draußen und beobachte die Straße.",
-          "fr": "Entre dans le café le plus proche, commande quelque chose que tu n'as jamais essayé et assieds-toi dehors pendant au moins 10 minutes à observer la rue."
+          "en": "Go to the food court and order something from a stall you've never tried before. Eat it before you leave.",
+          "de": "Geh zum Food Court und bestell etwas bei einem Stand, bei dem du noch nie bestellt hast. Iss es, bevor du gehst.",
+          "fr": "Rends-toi au food court et commande quelque chose à un stand que tu n'as jamais essayé. Mange-le avant de partir."
         },
         "difficulty": "easy",
         "type": "food"
       },
       {
-        "id": "wb-3",
+        "id": "bw-3",
         "title": {
-          "en": "Oldest Building",
-          "de": "Ältestes Gebäude",
-          "fr": "Bâtiment le plus ancien"
+          "en": "Highest Point",
+          "de": "Höchster Punkt",
+          "fr": "Le point le plus haut"
         },
         "description": {
-          "en": "Walk two blocks in any direction and find what you think is the oldest building. Photograph it and note the architectural style.",
-          "de": "Geh zwei Blocks in eine beliebige Richtung und finde das älteste Gebäude, das du entdecken kannst. Fotografiere es und notiere den Architekturstil.",
-          "fr": "Marche deux pâtés de maisons dans n'importe quelle direction et trouve ce que tu penses être le bâtiment le plus ancien. Photographie-le et note le style architectural."
+          "en": "Find the highest publicly accessible point inside or around the Westside building. Take a photo of the view from there.",
+          "de": "Finde den höchsten öffentlich zugänglichen Punkt innerhalb oder rund um das Westside-Gebäude. Mach ein Foto der Aussicht von dort.",
+          "fr": "Trouve le point accessible au public le plus élevé à l'intérieur ou autour du bâtiment Westside. Prends une photo de la vue depuis cet endroit."
         },
         "difficulty": "medium",
         "type": "explore"
       },
       {
-        "id": "wb-4",
+        "id": "bw-4",
         "title": {
-          "en": "Hidden Courtyard",
-          "de": "Versteckter Innenhof",
-          "fr": "Cour cachée"
+          "en": "Shop Employee Chat",
+          "de": "Gespräch mit Verkäufer",
+          "fr": "Discussion avec un vendeur"
         },
         "description": {
-          "en": "Bernese arcades often hide inner courtyards. Find one accessible courtyard, step inside, and sketch or describe what you see.",
-          "de": "Berner Lauben verbergen oft Innenhöfe. Finde einen zugänglichen Innenhof, tritt ein und skizziere oder beschreibe, was du siehst.",
-          "fr": "Les arcades bernoises cachent souvent des cours intérieures. Trouve une cour accessible, entre-y et esquisse ou décris ce que tu vois."
+          "en": "Enter the most unusual-looking shop and ask the employee what the most popular item is. Have a genuine 2-minute conversation.",
+          "de": "Betritt den ungewöhnlichsten Laden und frage die Verkäuferin, was das beliebteste Produkt ist. Führe ein echtes 2-Minuten-Gespräch.",
+          "fr": "Entre dans la boutique la plus originale et demande à l'employé quel est l'article le plus populaire. Engage une vraie conversation de 2 minutes."
         },
-        "difficulty": "medium",
-        "type": "explore"
+        "difficulty": "hard",
+        "type": "social"
       },
       {
-        "id": "wb-5",
+        "id": "bw-5",
         "title": {
-          "en": "Local Market Find",
-          "de": "Lokaler Marktfund",
-          "fr": "Trouvaille au marché local"
+          "en": "Outside Escape",
+          "de": "Raus ins Freie",
+          "fr": "L'évasion en plein air"
         },
         "description": {
-          "en": "Find a small local shop (not a chain) and buy one edible item you can't identify by sight alone. Taste it.",
-          "de": "Finde ein kleines lokales Geschäft (keine Kette) und kaufe ein essbares Produkt, das du auf den ersten Blick nicht identifizieren kannst. Probiere es.",
-          "fr": "Trouve une petite boutique locale (pas une chaîne) et achète un produit comestible que tu ne peux pas identifier à vue d'œil. Goûte-le."
+          "en": "Walk away from the shopping centre and find the nearest patch of nature — a tree, a garden, a stream. Spend 5 minutes there.",
+          "de": "Geh weg vom Einkaufszentrum und finde das nächste Stück Natur — einen Baum, einen Garten, einen Bach. Verbringe 5 Minuten dort.",
+          "fr": "Éloigne-toi du centre commercial et trouve le coin de nature le plus proche — un arbre, un jardin, un ruisseau. Passe 5 minutes là-bas."
         },
         "difficulty": "easy",
-        "type": "food"
+        "type": "explore"
       }
     ]
   },
   {
     "id": "worb-dorf",
     "stop": "Worb Dorf",
-    "apiMatch": "worb dorf",
     "tramLine": "6",
     "emoji": "🏰",
     "neighborhood": {
@@ -190,7 +188,6 @@
   {
     "id": "bümpliz-nord",
     "stop": "Bümpliz Nord",
-    "apiMatch": "bümpliz",
     "tramLine": "8",
     "emoji": "🎨",
     "neighborhood": {
@@ -283,8 +280,7 @@
   },
   {
     "id": "wankdorf",
-    "stop": "Wankdorf, Bahnhof",
-    "apiMatch": "wankdorf",
+    "stop": "Wankdorf",
     "tramLine": "9",
     "emoji": "⚽",
     "neighborhood": {
@@ -378,7 +374,6 @@
   {
     "id": "fischermätteli",
     "stop": "Fischermätteli",
-    "apiMatch": "fischermätteli",
     "tramLine": "6",
     "emoji": "🎪",
     "neighborhood": {
