@@ -10,7 +10,7 @@ import LoadingScreen from './screens/LoadingScreen'
 // Screens: home | loading | destination | challenge | badges
 export default function App() {
   const [screen, setScreen] = useState('home')
-  const { status, destination, departure, challenge, error, spin, respin } = useTramDeparture()
+  const { status, destination, departures, challenge, error, spin, respin } = useTramDeparture()
   const { badges, earnBadge, hasBadge, clearBadges } = useBadges()
 
   function handleSpin() {
@@ -63,21 +63,21 @@ export default function App() {
         />
       )}
 
-      {screen === 'destination' && destination && departure && (
+      {screen === 'destination' && destination && departures && (
         <DestinationScreen
           destination={destination}
-          departure={departure}
+          departures={departures}
           onAccept={handleAcceptChallenge}
           onRespin={handleRespin}
           onBack={handleBack}
         />
       )}
 
-      {screen === 'challenge' && destination && departure && challenge && (
+      {screen === 'challenge' && destination && departures && challenge && (
         <ChallengeScreen
           destination={destination}
           challenge={challenge}
-          departure={departure}
+          nextDeparture={departures[0]}
           alreadyEarned={alreadyEarned}
           onComplete={handleCompleteChallenge}
           onBack={handleBack}

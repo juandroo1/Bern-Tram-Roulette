@@ -3,6 +3,7 @@ import challengesData from '../data/challenges.json'
 
 const STATION = 'Bern, Bahnhof'
 const API_BASE = 'https://transport.opendata.ch/v1'
+const SHOWN_DEPARTURES = 3
 
 function pickRandom(arr) {
   return arr[Math.floor(Math.random() * arr.length)]
@@ -20,61 +21,70 @@ function minutesUntil(isoString) {
   return Math.max(0, Math.round(diff / 60000))
 }
 
+function makeDeparture(entry) {
+  const departureTime = entry.stop?.departure ?? null
+  return {
+    line: entry.number ?? entry.name ?? '?',
+    to: entry.to,
+    time: formatTime(departureTime),
+    minutesUntil: minutesUntil(departureTime),
+    delay: entry.stop?.delay ?? 0,
+    platform: entry.stop?.platform ?? null,
+  }
+}
+
 export function useTramDeparture() {
   const [state, setState] = useState({
     status: 'idle', // idle | loading | success | error | no_match
     destination: null,
-    departure: null,
+    departures: null, // array of up to SHOWN_DEPARTURES
     challenge: null,
     error: null,
   })
 
   const spin = useCallback(async () => {
-    setState({ status: 'loading', destination: null, departure: null, challenge: null, error: null })
+    setState({ status: 'loading', destination: null, departures: null, challenge: null, error: null })
 
     try {
+      // Fetch enough entries so every curated destination has several upcoming departures.
+      // Trams run ~every 7-15 min; 150 entries across all lines gives a comfortable buffer.
       const res = await fetch(
-        `${API_BASE}/stationboard?station=${encodeURIComponent(STATION)}&limit=80&transportations[]=tram`
+        `${API_BASE}/stationboard?station=${encodeURIComponent(STATION)}&limit=150&transportations[]=tram`
       )
       if (!res.ok) throw new Error(`API error ${res.status}`)
       const data = await res.json()
 
       const board = data.stationboard ?? []
 
-      // Filter to trams going to one of our curated stops
-      const matched = board.filter((entry) => {
+      // Group entries by curated destination id
+      const byDest = {}
+      for (const entry of board) {
         const dest = (entry.to ?? '').toLowerCase()
-        return challengesData.some((c) => dest.includes(c.apiMatch.toLowerCase()))
-      })
+        const curated = challengesData.find((c) => dest.includes(c.apiMatch.toLowerCase()))
+        if (!curated) continue
+        if (!byDest[curated.id]) byDest[curated.id] = { curated, entries: [] }
+        byDest[curated.id].entries.push(entry)
+      }
 
-      if (matched.length === 0) {
-        setState({ status: 'no_match', destination: null, departure: null, challenge: null, error: null })
+      const available = Object.values(byDest)
+      if (available.length === 0) {
+        setState({ status: 'no_match', destination: null, departures: null, challenge: null, error: null })
         return
       }
 
-      // Pick a random matching departure
-      const picked = pickRandom(matched)
-      const destination = challengesData.find((c) =>
-        (picked.to ?? '').toLowerCase().includes(c.apiMatch.toLowerCase())
-      )
+      // Pick a random destination, then take its next N departures sorted by time
+      const picked = pickRandom(available)
+      const departures = picked.entries
+        .filter((e) => e.stop?.departure)
+        .sort((a, b) => new Date(a.stop.departure) - new Date(b.stop.departure))
+        .slice(0, SHOWN_DEPARTURES)
+        .map(makeDeparture)
 
-      const departureTime = picked.stop?.departure ?? null
-      const delay = picked.stop?.delay ?? 0
+      const challenge = pickRandom(picked.curated.challenges)
 
-      const departure = {
-        line: picked.number ?? picked.name ?? '?',
-        to: picked.to,
-        time: formatTime(departureTime),
-        minutesUntil: minutesUntil(departureTime),
-        delay,
-        platform: picked.stop?.platform ?? null,
-      }
-
-      const challenge = pickRandom(destination.challenges)
-
-      setState({ status: 'success', destination, departure, challenge, error: null })
+      setState({ status: 'success', destination: picked.curated, departures, challenge, error: null })
     } catch (err) {
-      setState({ status: 'error', destination: null, departure: null, challenge: null, error: err.message })
+      setState({ status: 'error', destination: null, departures: null, challenge: null, error: err.message })
     }
   }, [])
 
