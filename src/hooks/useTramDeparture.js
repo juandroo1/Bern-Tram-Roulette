@@ -31,12 +31,12 @@ async function fetchDirectTrams(stop) {
       `?from=${encodeURIComponent(STATION_FROM)}` +
       `&to=${encodeURIComponent(stop)}` +
       `&transportations[]=tram` +
-      `&limit=${SHOWN_DEPARTURES + 3}`
+      `&limit=${SHOWN_DEPARTURES + 6}`
     const res = await fetch(url)
     if (!res.ok) return []
     const { connections = [] } = await res.json()
 
-    return connections
+    const deps = connections
       .filter((c) => (c.transfers ?? 1) === 0) // direct tram only
       .map((c) => {
         const journey = c.sections?.[0]?.journey ?? {}
@@ -50,8 +50,12 @@ async function fetchDirectTrams(stop) {
           platform: c.from?.platform ?? null,
         }
       })
-      .filter((dep) => dep.minutesUntil !== null && dep.minutesUntil <= MAX_WAIT_MINUTES)
-      .slice(0, SHOWN_DEPARTURES)
+
+    // A stop is only valid if the very next departure is within MAX_WAIT_MINUTES.
+    // Once that's confirmed, show up to SHOWN_DEPARTURES — even if later ones
+    // exceed the window, the user has already committed to the destination.
+    if (deps.length === 0 || (deps[0].minutesUntil ?? Infinity) > MAX_WAIT_MINUTES) return []
+    return deps.slice(0, SHOWN_DEPARTURES)
   } catch {
     return []
   }
