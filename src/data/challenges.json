@@ -1,0 +1,232 @@
+[
+  {
+    "id": "weissenbuhl",
+    "stop": "Weissenbühl",
+    "apiMatch": "weissenbühl",
+    "tramLine": "3",
+    "emoji": "🌹",
+    "neighborhood": "Südquartier",
+    "description": "A quiet residential area with leafy streets and hidden gardens.",
+    "challenges": [
+      {
+        "id": "wb-1",
+        "title": "Rose Hunt",
+        "description": "Find a garden or balcony with roses and count how many different colors you can spot. Bonus: ask a local what their favorite variety is.",
+        "difficulty": "easy",
+        "type": "explore"
+      },
+      {
+        "id": "wb-2",
+        "title": "Café Stranger",
+        "description": "Walk into the nearest café, order something you've never tried before, and sit outside for at least 10 minutes watching the street.",
+        "difficulty": "easy",
+        "type": "food"
+      },
+      {
+        "id": "wb-3",
+        "title": "Oldest Building",
+        "description": "Walk two blocks in any direction and find what you think is the oldest building. Photograph it and note the architectural style.",
+        "difficulty": "medium",
+        "type": "explore"
+      },
+      {
+        "id": "wb-4",
+        "title": "Hidden Courtyard",
+        "description": "Bernese arcades often hide inner courtyards. Find one accessible courtyard, step inside, and sketch or describe what you see.",
+        "difficulty": "medium",
+        "type": "explore"
+      },
+      {
+        "id": "wb-5",
+        "title": "Local Market Find",
+        "description": "Find a small local shop (not a chain) and buy one edible item you can't identify by sight alone. Taste it.",
+        "difficulty": "easy",
+        "type": "food"
+      }
+    ]
+  },
+  {
+    "id": "worb-dorf",
+    "stop": "Worb Dorf",
+    "apiMatch": "worb dorf",
+    "tramLine": "6",
+    "emoji": "🏰",
+    "neighborhood": "Worb",
+    "description": "A village at the end of the line with a medieval castle overlooking the valley.",
+    "challenges": [
+      {
+        "id": "wd-1",
+        "title": "Castle Silhouette",
+        "description": "Find a viewpoint where you can photograph Worb Castle. Extra points if you catch it with the Bernese Alps in the background.",
+        "difficulty": "easy",
+        "type": "photo"
+      },
+      {
+        "id": "wd-2",
+        "title": "River Worble",
+        "description": "Locate the Worble river and walk along it for at least 5 minutes. Find something that surprises you — a bird, a fish, an unexpected structure.",
+        "difficulty": "medium",
+        "type": "explore"
+      },
+      {
+        "id": "wd-3",
+        "title": "Village Bench",
+        "description": "Find a public bench in the village center, sit down for 5 minutes, and write three observations about the people passing by.",
+        "difficulty": "easy",
+        "type": "social"
+      },
+      {
+        "id": "wd-4",
+        "title": "Farm Stand",
+        "description": "Find an unattended farm stand (Hofladen) with honor-system payment and buy something from it.",
+        "difficulty": "medium",
+        "type": "food"
+      },
+      {
+        "id": "wd-5",
+        "title": "Church Bell",
+        "description": "Find the village church and wait for the next bell chime. Count the strikes and figure out what time they say.",
+        "difficulty": "easy",
+        "type": "explore"
+      }
+    ]
+  },
+  {
+    "id": "bümpliz-nord",
+    "stop": "Bümpliz Nord",
+    "apiMatch": "bümpliz",
+    "tramLine": "8",
+    "emoji": "🎨",
+    "neighborhood": "Bümpliz",
+    "description": "A multicultural district with vibrant street art and a strong community spirit.",
+    "challenges": [
+      {
+        "id": "bn-1",
+        "title": "Street Art Safari",
+        "description": "Find three pieces of street art or murals within a 500m radius. Photograph each one and rank them by your favorite.",
+        "difficulty": "medium",
+        "type": "photo"
+      },
+      {
+        "id": "bn-2",
+        "title": "Five Languages",
+        "description": "Walk around the neighborhood and collect greetings in five different languages from shop signs, menus, or people you meet.",
+        "difficulty": "medium",
+        "type": "social"
+      },
+      {
+        "id": "bn-3",
+        "title": "International Bite",
+        "description": "Find a restaurant or takeaway serving food from a country you've never visited and order something from their menu.",
+        "difficulty": "easy",
+        "type": "food"
+      },
+      {
+        "id": "bn-4",
+        "title": "Playground Theory",
+        "description": "Find a playground and observe the equipment. What's the most creative piece? How old do you think it is?",
+        "difficulty": "easy",
+        "type": "explore"
+      },
+      {
+        "id": "bn-5",
+        "title": "Corner Shop",
+        "description": "Find the most interesting small corner shop, step inside and strike up a conversation with the person behind the counter.",
+        "difficulty": "hard",
+        "type": "social"
+      }
+    ]
+  },
+  {
+    "id": "wankdorf",
+    "stop": "Wankdorf, Bahnhof",
+    "apiMatch": "wankdorf",
+    "tramLine": "9",
+    "emoji": "⚽",
+    "neighborhood": "Wankdorf",
+    "description": "Home to YB's stadium and a sprawling urban district under constant transformation.",
+    "challenges": [
+      {
+        "id": "wk-1",
+        "title": "Yellow & Black Spotter",
+        "description": "Spot someone wearing BSC Young Boys colors (yellow and black). If they look friendly, give them a thumbs up.",
+        "difficulty": "easy",
+        "type": "social"
+      },
+      {
+        "id": "wk-2",
+        "title": "Stadium Selfie",
+        "description": "Get as close to the Wankdorf stadium as you can and take a selfie with it. Bonus if a tram is visible in the frame.",
+        "difficulty": "easy",
+        "type": "photo"
+      },
+      {
+        "id": "wk-3",
+        "title": "Under Construction",
+        "description": "Find an active construction site. Read the permit board if there is one — what is being built and when does it finish?",
+        "difficulty": "medium",
+        "type": "explore"
+      },
+      {
+        "id": "wk-4",
+        "title": "Migros vs Coop",
+        "description": "Find one Migros AND one Coop within 10 minutes of walking. Compare the price of the same item in each store.",
+        "difficulty": "medium",
+        "type": "explore"
+      },
+      {
+        "id": "wk-5",
+        "title": "Tram Watch",
+        "description": "Return to the tram stop and watch three trams pass. Note which lines they are and photograph the most interesting-looking one.",
+        "difficulty": "easy",
+        "type": "photo"
+      }
+    ]
+  },
+  {
+    "id": "fischermätteli",
+    "stop": "Fischermätteli",
+    "apiMatch": "fischermätteli",
+    "tramLine": "6",
+    "emoji": "🎪",
+    "neighborhood": "Fischermätteli",
+    "description": "A lively end-of-line stop with open spaces, families, and classic Swiss neighborhood charm.",
+    "challenges": [
+      {
+        "id": "fm-1",
+        "title": "Dog Count",
+        "description": "Spend 10 minutes near the tram stop and count every dog that walks by. Bonus: learn one dog's name.",
+        "difficulty": "easy",
+        "type": "social"
+      },
+      {
+        "id": "fm-2",
+        "title": "Parklife",
+        "description": "Find a patch of green space and observe what people are doing in it. List at least four different activities.",
+        "difficulty": "easy",
+        "type": "explore"
+      },
+      {
+        "id": "fm-3",
+        "title": "Sound Map",
+        "description": "Stand still for 2 minutes with your eyes closed. Identify five distinct sounds you hear. What story do they tell about this place?",
+        "difficulty": "easy",
+        "type": "explore"
+      },
+      {
+        "id": "fm-4",
+        "title": "Window Garden",
+        "description": "Walk one block and find the most impressive window box or balcony garden. Photograph it — what plants can you name?",
+        "difficulty": "easy",
+        "type": "photo"
+      },
+      {
+        "id": "fm-5",
+        "title": "Bakery Quest",
+        "description": "Find a traditional Swiss bakery and order a Gipfeli or Butterzopf. Eat it before you get back on the tram.",
+        "difficulty": "easy",
+        "type": "food"
+      }
+    ]
+  }
+]
