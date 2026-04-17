@@ -4,6 +4,7 @@ import challengesData from '../data/challenges.json'
 const API_BASE = 'https://transport.opendata.ch/v1'
 const STATION_FROM = 'Bern'
 const SHOWN_DEPARTURES = 3
+const MAX_WAIT_MINUTES = 30
 
 function pickRandom(arr) {
   return arr[Math.floor(Math.random() * arr.length)]
@@ -37,7 +38,6 @@ async function fetchDirectTrams(stop) {
 
     return connections
       .filter((c) => (c.transfers ?? 1) === 0) // direct tram only
-      .slice(0, SHOWN_DEPARTURES)
       .map((c) => {
         const journey = c.sections?.[0]?.journey ?? {}
         return {
@@ -50,6 +50,8 @@ async function fetchDirectTrams(stop) {
           platform: c.from?.platform ?? null,
         }
       })
+      .filter((dep) => dep.minutesUntil !== null && dep.minutesUntil <= MAX_WAIT_MINUTES)
+      .slice(0, SHOWN_DEPARTURES)
   } catch {
     return []
   }

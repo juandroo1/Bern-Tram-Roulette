@@ -45,7 +45,7 @@
     "fetching": "Fetching live tram departures",
     "errorTitle": "Could not load departures",
     "noMatchTitle": "No trams found right now",
-    "noMatchHint": "None of our curated tram lines had upcoming departures. Try again in a few minutes!",
+    "noMatchHint": "No trams to any of our destinations are departing within 30 minutes. Try again later or check the tram schedule.",
     "retry": "Try Again",
     "back": "Go back"
   },

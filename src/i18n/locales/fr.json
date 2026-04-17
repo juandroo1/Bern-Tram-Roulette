@@ -45,7 +45,7 @@
     "fetching": "Récupération des départs de trams",
     "errorTitle": "Impossible de charger les départs",
     "noMatchTitle": "Aucun tram trouvé pour l'instant",
-    "noMatchHint": "Aucune de nos lignes de tram n'avait de départs à venir. Réessayez dans quelques minutes !",
+    "noMatchHint": "Aucun tram vers nos destinations ne part dans les 30 prochaines minutes. Réessayez plus tard ou consultez l'horaire.",
     "retry": "Réessayer",
     "back": "Retour"
   },

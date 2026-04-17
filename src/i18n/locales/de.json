@@ -45,7 +45,7 @@
     "fetching": "Lade aktuelle Tramabfahrten",
     "errorTitle": "Abfahrten konnten nicht geladen werden",
     "noMatchTitle": "Gerade keine passenden Trams",
-    "noMatchHint": "Keine unserer kuratierten Tramlinien hatte bevorstehende Abfahrten. Versuche es in ein paar Minuten erneut!",
+    "noMatchHint": "In den nächsten 30 Minuten fährt keine Tram zu unseren Zielen. Versuche es später oder prüfe den Fahrplan.",
     "retry": "Erneut versuchen",
     "back": "Zurück"
   },
