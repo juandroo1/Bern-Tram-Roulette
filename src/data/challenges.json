@@ -296,6 +296,80 @@
     ]
   },
   {
+    "id": "boempliz",
+    "stop": "Bümpliz Nord",
+    "stationboardTo": "Bern, Bömpliz",
+    "tramLine": "7",
+    "emoji": "🏘️",
+    "neighborhood": {
+      "en": "Bümpliz",
+      "de": "Bümpliz",
+      "fr": "Bümpliz"
+    },
+    "description": {
+      "en": "A working-class western district with a strong community spirit, multicultural markets, and a surprisingly rich history.",
+      "de": "Ein westliches Arbeiterquartier mit lebhaftem Gemeinschaftsgeist, multikulturellen Märkten und einer überraschend reichen Geschichte.",
+      "fr": "Un quartier populaire à l'ouest avec un fort esprit communautaire, des marchés multiculturels et une histoire étonnamment riche."
+    },
+    "challenges": [
+      {
+        "id": "bp-1",
+        "title": { "en": "Market Haul", "de": "Markt-Einkauf", "fr": "La course au marché" },
+        "description": {
+          "en": "Find the local market or a small grocery and buy one ingredient you've never cooked with. Ask the vendor how to use it.",
+          "de": "Finde den lokalen Markt oder ein kleines Lebensmittelgeschäft und kaufe eine Zutat, die du noch nie gekocht hast. Frage den Verkäufer, wie man sie verwendet.",
+          "fr": "Trouve le marché local ou une petite épicerie et achète un ingrédient que tu n'as jamais cuisiné. Demande au vendeur comment l'utiliser."
+        },
+        "difficulty": "medium",
+        "type": "food"
+      },
+      {
+        "id": "bp-2",
+        "title": { "en": "Street Mural", "de": "Straßengemälde", "fr": "La fresque de rue" },
+        "description": {
+          "en": "Find a piece of street art or a colourful mural in Bümpliz. Photograph it — what do you think it represents?",
+          "de": "Finde ein Stück Straßenkunst oder ein buntes Wandgemälde in Bümpliz. Fotografiere es — was denkst du, was es darstellt?",
+          "fr": "Trouve une œuvre d'art de rue ou une fresque colorée à Bümpliz. Photographie-la — que penses-tu qu'elle représente ?"
+        },
+        "difficulty": "easy",
+        "type": "photo"
+      },
+      {
+        "id": "bp-3",
+        "title": { "en": "Castle Ruin", "de": "Burgruine", "fr": "La ruine du château" },
+        "description": {
+          "en": "Bümpliz has a medieval heritage — find the old Bümpliz castle site or any historical marker and read what it says.",
+          "de": "Bümpliz hat ein mittelalterliches Erbe — finde den alten Burgplatz Bümpliz oder eine historische Tafel und lies, was darauf steht.",
+          "fr": "Bümpliz a un patrimoine médiéval — trouve l'ancien site du château de Bümpliz ou une plaque historique et lis ce qui y est écrit."
+        },
+        "difficulty": "medium",
+        "type": "explore"
+      },
+      {
+        "id": "bp-4",
+        "title": { "en": "Language Count", "de": "Sprachenzählung", "fr": "Le compte des langues" },
+        "description": {
+          "en": "Walk one block and count how many different languages you hear or see on signs. What's the most unexpected one?",
+          "de": "Geh einen Block entlang und zähle, wie viele verschiedene Sprachen du hörst oder auf Schildern siehst. Welche ist die unerwartetste?",
+          "fr": "Marche un pâté de maisons et compte combien de langues différentes tu entends ou vois sur des panneaux. Laquelle est la plus inattendue ?"
+        },
+        "difficulty": "easy",
+        "type": "explore"
+      },
+      {
+        "id": "bp-5",
+        "title": { "en": "Best Bench", "de": "Beste Bank", "fr": "Le meilleur banc" },
+        "description": {
+          "en": "Find what you decide is the best bench in Bümpliz — best view, most shade, most interesting location. Sit for 5 minutes and justify your choice.",
+          "de": "Finde die Bank, die du für die beste in Bümpliz hältst — beste Aussicht, meisten Schatten, interessantester Ort. Sitz 5 Minuten und begründe deine Wahl.",
+          "fr": "Trouve ce que tu décides être le meilleur banc à Bümpliz — meilleure vue, plus d'ombre, endroit le plus intéressant. Assieds-toi 5 minutes et justifie ton choix."
+        },
+        "difficulty": "easy",
+        "type": "social"
+      }
+    ]
+  },
+  {
     "id": "wabern",
     "stop": "Wabern",
     "stationboardTo": "Wabern, Tram-Endstation",

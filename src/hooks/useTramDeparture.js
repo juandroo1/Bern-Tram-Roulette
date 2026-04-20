@@ -3,7 +3,7 @@ import challengesData from '../data/challenges.json'
 
 const API_BASE = 'https://transport.opendata.ch/v1'
 const BERN_BAHNHOF = 'Bern, Bahnhof'
-const STATIONBOARD_LIMIT = 200
+const STATIONBOARD_LIMIT = 300
 const SHOWN_DEPARTURES = 3
 const MAX_WAIT_MINUTES = 30
 
@@ -22,11 +22,13 @@ function minutesUntil(isoString) {
 }
 
 /**
- * Fetch the stationboard from Bern Bahnhof once, then match entries against
- * our curated stops using the exact `to` field from the API.
+ * Fetch the Bern Bahnhof stationboard once and match entries to curated stops.
  *
- * Returns an array of { dest, departures } for stops that have at least one
- * tram departing within MAX_WAIT_MINUTES.
+ * Primary key: tram line number.  The `stationboardTo` field in challenges.json
+ * is used as a direction filter (so we don't send someone toward Bümpliz when
+ * the challenge is for Ostring), but if the exact string doesn't match — due to
+ * API variance or short-running services — we fall back to any departure on that
+ * line so no line is silently dropped.
  */
 async function fetchValidStops() {
   const url =
@@ -39,17 +41,19 @@ async function fetchValidStops() {
   if (!res.ok) throw new Error(`API error: ${res.status}`)
   const { stationboard = [] } = await res.json()
 
-  // Build a lookup: stationboardTo → list of departure objects (within window)
-  const grouped = new Map()
+  // Group upcoming departures (≤ MAX_WAIT_MINUTES) by line number.
+  const byLine = new Map() // line → [departure, …]
   for (const entry of stationboard) {
     const mins = minutesUntil(entry.stop?.departure)
     if (mins === null || mins > MAX_WAIT_MINUTES) continue
 
-    const toKey = entry.to
-    if (!grouped.has(toKey)) grouped.set(toKey, [])
-    grouped.get(toKey).push({
-      line: entry.number ?? entry.name ?? '?',
-      to: entry.to,
+    const line = String(entry.number ?? entry.name ?? '').trim()
+    if (!line) continue
+
+    if (!byLine.has(line)) byLine.set(line, [])
+    byLine.get(line).push({
+      line,
+      to: entry.to ?? '',
       time: formatTime(entry.stop?.departure),
       minutesUntil: mins,
       delay: entry.stop?.delay ?? 0,
@@ -57,12 +61,20 @@ async function fetchValidStops() {
     })
   }
 
-  // Match grouped departures to curated destinations
+  // For each curated destination, check if its tram line is running.
   const valid = []
   for (const dest of challengesData) {
-    const deps = grouped.get(dest.stationboardTo)
-    if (!deps || deps.length === 0) continue
-    // Already filtered to ≤30 min; sort by departure time and cap at SHOWN_DEPARTURES
+    const allDepsForLine = byLine.get(String(dest.tramLine)) ?? []
+    if (allDepsForLine.length === 0) continue // line not in service right now
+
+    // Prefer departures going to the expected terminal (correct direction).
+    // Fall back to all departures on the line if the exact string isn't found —
+    // e.g. the API sometimes uses slightly different spellings for short-turns.
+    const directed = dest.stationboardTo
+      ? allDepsForLine.filter((d) => d.to === dest.stationboardTo)
+      : allDepsForLine
+    const deps = directed.length > 0 ? directed : allDepsForLine
+
     deps.sort((a, b) => a.minutesUntil - b.minutesUntil)
     valid.push({ dest, departures: deps.slice(0, SHOWN_DEPARTURES) })
   }
