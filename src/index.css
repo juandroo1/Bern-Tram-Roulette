@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(251, 191, 36, 0.25), 0 8px 30px rgba(0, 0, 0, 0.3); }
+  50% { box-shadow: 0 0 48px rgba(251, 191, 36, 0.55), 0 8px 30px rgba(0, 0, 0, 0.3); }
+}
+
+@keyframes dotBounce {
+  0%, 80%, 100% { transform: translateY(0); opacity: 0.35; }
+  40% { transform: translateY(-8px); opacity: 1; }
+}
+
+.animate-float       { animation: float 3s ease-in-out infinite; }
+.animate-glow-pulse  { animation: glowPulse 2.5s ease-in-out infinite; }
+.dot-1 { animation: dotBounce 1.4s ease-in-out infinite 0s; }
+.dot-2 { animation: dotBounce 1.4s ease-in-out infinite 0.2s; }
+.dot-3 { animation: dotBounce 1.4s ease-in-out infinite 0.4s; }
