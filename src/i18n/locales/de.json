@@ -38,7 +38,9 @@
     "tramLabel": "Tram {{line}}",
     "empty": "Noch keine Abzeichen",
     "emptyHint": "Dreh das Roulette, steig in eine Tram und schließe eine Herausforderung ab, um dein erstes Abzeichen zu verdienen!",
-    "clear": "Alle Abzeichen löschen"
+    "clear": "Alle Abzeichen löschen",
+    "earnedOn": "Verdient am",
+    "backToList": "Zurück zu den Abzeichen"
   },
   "loading": {
     "rolling": "Würfeln…",

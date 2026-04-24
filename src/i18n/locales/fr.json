@@ -38,7 +38,9 @@
     "tramLabel": "Tram {{line}}",
     "empty": "Pas encore de badges",
     "emptyHint": "Lancez la roulette, prenez un tram et relevez un défi pour gagner votre premier badge !",
-    "clear": "Effacer tous les badges"
+    "clear": "Effacer tous les badges",
+    "earnedOn": "Obtenu le",
+    "backToList": "Retour aux badges"
   },
   "loading": {
     "rolling": "On tire les dés…",

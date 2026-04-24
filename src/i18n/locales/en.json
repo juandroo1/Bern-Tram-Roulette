@@ -38,7 +38,9 @@
     "tramLabel": "Tram {{line}}",
     "empty": "No badges yet",
     "emptyHint": "Spin the roulette, catch a tram, and complete a challenge to earn your first badge!",
-    "clear": "Clear all badges"
+    "clear": "Clear all badges",
+    "earnedOn": "Earned on",
+    "backToList": "Back to badges"
   },
   "loading": {
     "rolling": "Rolling the dice…",
