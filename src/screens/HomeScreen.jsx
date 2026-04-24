@@ -32,10 +32,10 @@ export default function HomeScreen({ onSpin, onBadges, badgeCount }) {
 
         <div className="flex flex-col gap-0">
           <p className="text-white/50 text-xs font-bold tracking-[0.3em] uppercase mb-2">Bern</p>
-          <h1 className="text-6xl font-black tracking-tight leading-none uppercase">
+          <h1 className="text-[clamp(2.5rem,12vw,3.75rem)] font-black tracking-tight leading-none uppercase whitespace-nowrap">
             {t('home.titleLine1')}
           </h1>
-          <h1 className="text-6xl font-black tracking-tight leading-none uppercase text-amber-400">
+          <h1 className="text-[clamp(2.5rem,12vw,3.75rem)] font-black tracking-tight leading-none uppercase text-amber-400 whitespace-nowrap">
             {t('home.titleLine2')}
           </h1>
         </div>
