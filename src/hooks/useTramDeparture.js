@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useRef } from 'react'
 import challengesData from '../data/challenges.json'
 
 const API_BASE = 'https://transport.opendata.ch/v1'
@@ -91,6 +91,9 @@ export function useTramDeparture() {
     error: null,
   })
 
+  // Track the last destination id so we never land on the same one twice in a row.
+  const lastDestIdRef = useRef(null)
+
   const spin = useCallback(async () => {
     setState({ status: 'loading', destination: null, departures: null, challenge: null, error: null })
 
@@ -102,9 +105,15 @@ export function useTramDeparture() {
         return
       }
 
-      const { dest, departures } = pickRandom(valid)
+      // Exclude the last destination when there's at least one alternative.
+      const pool = valid.length > 1
+        ? valid.filter((v) => v.dest.id !== lastDestIdRef.current)
+        : valid
+
+      const { dest, departures } = pickRandom(pool)
       const challenge = pickRandom(dest.challenges)
 
+      lastDestIdRef.current = dest.id
       setState({ status: 'success', destination: dest, departures, challenge, error: null })
     } catch (err) {
       setState({ status: 'error', destination: null, departures: null, challenge: null, error: err.message })
