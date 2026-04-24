@@ -40,7 +40,10 @@
     "emptyHint": "Spin the roulette, catch a tram, and complete a challenge to earn your first badge!",
     "clear": "Clear all badges",
     "earnedOn": "Earned on",
-    "backToList": "Back to badges"
+    "backToList": "Back to badges",
+    "clearConfirm": "Delete all badges? This cannot be undone.",
+    "clearYes": "Yes, delete all",
+    "clearNo": "Cancel"
   },
   "loading": {
     "rolling": "Rolling the dice…",

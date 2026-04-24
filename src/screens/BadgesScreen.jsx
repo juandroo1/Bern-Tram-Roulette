@@ -105,6 +105,7 @@ function BadgeDetailView({ badge, onBack }) {
 export default function BadgesScreen({ badges, onBack, onClear }) {
   const { t, tObj, lang } = useTranslation()
   const [selectedBadge, setSelectedBadge] = useState(null)
+  const [confirmClear, setConfirmClear] = useState(false)
 
   if (selectedBadge) {
     return <BadgeDetailView badge={selectedBadge} onBack={() => setSelectedBadge(null)} />
@@ -169,12 +170,32 @@ export default function BadgesScreen({ badges, onBack, onClear }) {
 
       {badges.length > 0 && (
         <div className="px-4 pb-10 pt-2">
-          <button
-            onClick={onClear}
-            className="w-full bg-white hover:bg-gray-50 active:scale-95 transition-all text-gray-400 hover:text-gray-600 font-medium py-3 rounded-2xl border border-gray-200 text-sm"
-          >
-            {t('badges.clear')}
-          </button>
+          {confirmClear ? (
+            <div className="bg-red-50 border border-red-200 rounded-2xl p-4 flex flex-col gap-3">
+              <p className="text-red-700 font-semibold text-sm text-center">{t('badges.clearConfirm')}</p>
+              <div className="flex gap-3">
+                <button
+                  onClick={() => { onClear(); setConfirmClear(false) }}
+                  className="flex-1 bg-red-600 hover:bg-red-700 active:scale-95 transition-all text-white font-bold py-2.5 rounded-xl text-sm"
+                >
+                  {t('badges.clearYes')}
+                </button>
+                <button
+                  onClick={() => setConfirmClear(false)}
+                  className="flex-1 bg-white hover:bg-gray-50 active:scale-95 transition-all text-gray-600 font-semibold py-2.5 rounded-xl border border-gray-200 text-sm"
+                >
+                  {t('badges.clearNo')}
+                </button>
+              </div>
+            </div>
+          ) : (
+            <button
+              onClick={() => setConfirmClear(true)}
+              className="w-full bg-white hover:bg-gray-50 active:scale-95 transition-all text-gray-400 hover:text-gray-600 font-medium py-3 rounded-2xl border border-gray-200 text-sm"
+            >
+              {t('badges.clear')}
+            </button>
+          )}
         </div>
       )}
     </div>

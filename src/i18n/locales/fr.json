@@ -40,7 +40,10 @@
     "emptyHint": "Lancez la roulette, prenez un tram et relevez un défi pour gagner votre premier badge !",
     "clear": "Effacer tous les badges",
     "earnedOn": "Obtenu le",
-    "backToList": "Retour aux badges"
+    "backToList": "Retour aux badges",
+    "clearConfirm": "Supprimer tous les badges ? Cette action est irréversible.",
+    "clearYes": "Oui, tout supprimer",
+    "clearNo": "Annuler"
   },
   "loading": {
     "rolling": "On tire les dés…",
