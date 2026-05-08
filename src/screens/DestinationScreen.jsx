@@ -49,7 +49,7 @@ export default function DestinationScreen({ destination, departures, onAccept, o
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-bm-amber animate-pulse" />
               <p className="text-bm-amber text-[10px] font-black tracking-[0.25em] uppercase">
-                Live · Bern Bahnhof
+                {t('destination.live')}
               </p>
             </div>
             <p className="text-white/35 text-[10px] font-mono tabular-nums">
@@ -63,7 +63,7 @@ export default function DestinationScreen({ destination, departures, onAccept, o
               <LineBadge line={next.line} size="xl" />
               <div className="flex-1 min-w-0">
                 <p className="text-white/40 text-[10px] font-black tracking-[0.25em] uppercase mb-0.5">
-                  Direction
+                  {t('destination.direction')}
                 </p>
                 <p className="text-white font-black text-xl leading-tight truncate">
                   {tObj(destination.neighborhood)}
@@ -76,7 +76,7 @@ export default function DestinationScreen({ destination, departures, onAccept, o
             <div className="flex items-end justify-between border-t border-white/10 pt-3">
               <div>
                 <p className="text-white/40 text-[10px] font-black tracking-[0.25em] uppercase mb-1">
-                  Departs
+                  {t('destination.departs')}
                 </p>
                 <p className="text-bm-amber font-mono font-black text-4xl tabular-nums leading-none">
                   {next.time}
@@ -102,7 +102,7 @@ export default function DestinationScreen({ destination, departures, onAccept, o
           {departures.length > 1 && (
             <div className="bg-black/30 px-5 py-2">
               <p className="text-white/30 text-[10px] font-black tracking-[0.25em] uppercase pt-1 pb-1">
-                Following
+                {t('destination.following')}
               </p>
               {departures.slice(1).map((dep) => (
                 <DepartureRow key={`${dep.line}-${dep.time}`} dep={dep} isFirst={false} t={t} />

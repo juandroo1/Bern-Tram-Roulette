@@ -2,6 +2,8 @@
   "home": {
     "titleLine1": "Berner Tram",
     "titleLine2": "Roulette",
+    "tagline": "Bern · Tram · Roulette",
+    "network": "Tramnetz",
     "subtitle": "Steig in eine zufällige Tram, entdecke einen neuen Winkel von Bern und meistere eine Herausforderung.",
     "spin": "Dreh das Roulette!",
     "credit": "Live-Tramabfahrten von transport.opendata.ch",
@@ -19,6 +21,9 @@
     "accept": "Herausforderung annehmen",
     "respin": "Anderes Ziel",
     "nextDepartures": "Nächste Abfahrten",
+    "live": "Live · Bern Bahnhof",
+    "direction": "Richtung",
+    "following": "Danach",
     "credit": "Direkte Trams ab Bern, Bahnhof · transport.opendata.ch"
   },
   "challenge": {

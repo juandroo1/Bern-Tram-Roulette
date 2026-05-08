@@ -2,6 +2,8 @@
   "home": {
     "titleLine1": "Roulette",
     "titleLine2": "Tram Berne",
+    "tagline": "Berne · Tram · Roulette",
+    "network": "Réseau tram",
     "subtitle": "Saute dans un tram aléatoire, découvre un nouveau coin de Berne et relève un défi.",
     "spin": "Lancer la roulette !",
     "credit": "Données de départ en direct de transport.opendata.ch",
@@ -19,6 +21,9 @@
     "accept": "Accepter le défi",
     "respin": "Autre destination",
     "nextDepartures": "Prochains départs",
+    "live": "En direct · Berne gare",
+    "direction": "Direction",
+    "following": "Suivants",
     "credit": "Trams directs depuis Berne gare · transport.opendata.ch"
   },
   "challenge": {

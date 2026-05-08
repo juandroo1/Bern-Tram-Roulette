@@ -27,7 +27,7 @@ export default function LoadingScreen({ status, error, onRetry, onBack }) {
 
           <div className="flex flex-col items-center gap-3 text-center">
             <p className="text-[10px] font-black tracking-[0.3em] uppercase text-bm-amber">
-              Live · Bern Bahnhof
+              {t('destination.live')}
             </p>
             <p className="text-2xl font-black uppercase tracking-tight">
               {t('loading.rolling')}

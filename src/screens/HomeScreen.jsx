@@ -28,7 +28,7 @@ export default function HomeScreen({ onSpin, onBadges, badgeCount }) {
 
         <div className="relative z-10 flex flex-col items-center text-center px-6 pt-8 pb-10 text-white">
           <p className="text-white/75 text-[11px] font-black tracking-[0.35em] uppercase mb-2">
-            Bern · Tram · Roulette
+            {t('home.tagline')}
           </p>
           <h1 className="text-[clamp(2rem,9vw,3.25rem)] font-black tracking-tight leading-[0.95] uppercase">
             {t('home.titleLine1')}
@@ -52,7 +52,7 @@ export default function HomeScreen({ onSpin, onBadges, badgeCount }) {
           {/* Network strip — line badges in Bernmobil-red signage style */}
           <div className="mt-6 w-full">
             <p className="text-[10px] font-black tracking-[0.25em] uppercase text-bm-ink/45 mb-2">
-              Tram Network
+              {t('home.network')}
             </p>
             <div className="flex items-center justify-center gap-2.5">
               {TRAM_LINES.map((line) => (
