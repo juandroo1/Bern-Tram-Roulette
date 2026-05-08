@@ -46,7 +46,7 @@
     "clearNo": "Annuler"
   },
   "loading": {
-    "rolling": "On tire les dés…",
+    "rolling": "Recherche de ton tram…",
     "fetching": "Récupération des départs de trams",
     "errorTitle": "Impossible de charger les départs",
     "noMatchTitle": "Aucun tram trouvé pour l'instant",

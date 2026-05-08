@@ -46,7 +46,7 @@
     "clearNo": "Cancel"
   },
   "loading": {
-    "rolling": "Rolling the dice…",
+    "rolling": "Finding your tram…",
     "fetching": "Fetching live tram departures",
     "errorTitle": "Could not load departures",
     "noMatchTitle": "No trams found right now",

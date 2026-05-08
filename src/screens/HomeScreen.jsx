@@ -5,6 +5,7 @@ import TramIcon from '../components/TramIcon.jsx'
 import LineBadge from '../components/LineBadge.jsx'
 
 const TRAM_LINES = ['6', '7', '8', '9']
+const HERO_LINE = '9'
 
 export default function HomeScreen({ onSpin, onBadges, badgeCount }) {
   const { t } = useTranslation()
@@ -38,7 +39,7 @@ export default function HomeScreen({ onSpin, onBadges, badgeCount }) {
           </h1>
 
           <div className="mt-7 -mb-6 animate-float drop-shadow-2xl">
-            <TramIcon className="w-56" line={TRAM_LINES[Math.floor(Math.random() * TRAM_LINES.length)]} />
+            <TramIcon className="w-56" line={HERO_LINE} />
           </div>
         </div>
 

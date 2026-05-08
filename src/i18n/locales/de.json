@@ -46,7 +46,7 @@
     "clearNo": "Abbrechen"
   },
   "loading": {
-    "rolling": "Würfeln…",
+    "rolling": "Suche deine Tram…",
     "fetching": "Lade aktuelle Tramabfahrten",
     "errorTitle": "Abfahrten konnten nicht geladen werden",
     "noMatchTitle": "Gerade keine passenden Trams",
