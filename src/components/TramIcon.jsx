@@ -25,9 +25,28 @@ export default function TramIcon({ className = '', line = null }) {
           opacity="0.55"
         />
 
-        {/* Windshield */}
-        <rect x="34" y="60" width="40" height="36" rx="6" fill="#0E1116" />
-        <rect x="36" y="62" width="36" height="14" rx="3" fill="#3a4252" opacity="0.8" />
+        {/* Front destination display — black LED panel just below the
+            yellow accent strip, like the dot-matrix sign on a real
+            Bernmobil Combino. */}
+        <rect x="28" y="55" width="46" height="13" rx="2" fill="#0E1116" />
+        {line != null && (
+          <text
+            x="51"
+            y="66"
+            textAnchor="middle"
+            fill="var(--color-bm-amber)"
+            fontFamily="ui-sans-serif, system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif"
+            fontWeight="900"
+            fontSize="11"
+            letterSpacing="-0.3"
+          >
+            {line}
+          </text>
+        )}
+
+        {/* Windshield (shortened to make room for the destination display above) */}
+        <rect x="34" y="72" width="40" height="24" rx="5" fill="#0E1116" />
+        <rect x="36" y="74" width="36" height="10" rx="3" fill="#3a4252" opacity="0.8" />
 
         {/* Side windows */}
         <g fill="#0E1116">
@@ -58,24 +77,6 @@ export default function TramIcon({ className = '', line = null }) {
         <circle cx="160" cy="172" r="10" fill="#0E1116" />
         <circle cx="160" cy="172" r="4"  fill="#3a4252" />
       </g>
-
-      {/* Line number — front roll sign */}
-      {line != null && (
-        <g>
-          <rect x="40" y="100" width="28" height="22" rx="3" fill="#0E1116" />
-          <text
-            x="54"
-            y="117"
-            textAnchor="middle"
-            fill="var(--color-bm-amber)"
-            fontFamily="ui-monospace, 'Cascadia Code', 'Fira Code', monospace"
-            fontWeight="900"
-            fontSize="16"
-          >
-            {line}
-          </text>
-        </g>
-      )}
 
       {/* Pantograph hint */}
       <rect x="98" y="32" width="40" height="4" rx="1" fill="#0E1116" />
