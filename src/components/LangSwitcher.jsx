@@ -6,15 +6,15 @@ export default function LangSwitcher({ className = '' }) {
   const { lang, changeLang, langs } = useTranslation()
 
   return (
-    <div className={`flex gap-1 ${className}`}>
+    <div className={`inline-flex rounded-md overflow-hidden ring-1 ring-white/20 ${className}`}>
       {langs.map((l) => (
         <button
           key={l}
           onClick={() => changeLang(l)}
-          className={`px-2 py-0.5 rounded text-xs font-bold transition-colors ${
+          className={`px-2 h-7 text-[11px] font-black tracking-wider transition-colors ${
             l === lang
-              ? 'bg-white text-red-700'
-              : 'bg-white/20 hover:bg-white/30 text-white'
+              ? 'bg-white text-bm-red'
+              : 'bg-white/0 hover:bg-white/15 text-white/85'
           }`}
         >
           {LABELS[l]}
