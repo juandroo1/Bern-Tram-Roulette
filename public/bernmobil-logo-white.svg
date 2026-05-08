@@ -19,10 +19,10 @@
      id="defs2989"><linearGradient
        id="linearGradient9024"><stop
          id="stop9026"
-         style="stop-color:#FFFFFF;stop-opacity:1"
+         style="stop-color:#d20037;stop-opacity:1"
          offset="0" /><stop
          id="stop9028"
-         style="stop-color:#FFFFFF;stop-opacity:1"
+         style="stop-color:#ca0030;stop-opacity:1"
          offset="1" /></linearGradient><linearGradient
        x1="365.81805"
        y1="76.169716"
@@ -50,7 +50,7 @@
          y="-773.51233"
          transform="scale(1,-1)"
          id="rect8254"
-         style="fill:url(#linearGradient9055);fill-opacity:1;stroke:none" /><path
+         style="fill:none;fill-opacity:0;stroke:none" /><path
          d="m 313.94382,758.35503 0,3.63445 6.24479,0 0,3.10036 -6.24479,0 0,2.53957 7.89511,0 0,3.16712 -11.86336,0 0,-15.76618 12.5323,0 0,3.32468 -8.56405,0 z"
          id="path7575"
          style="fill:white;fill-opacity:1;fill-rule:nonzero;stroke:none" /><path
