@@ -1,7 +1,9 @@
 import { useTranslation } from '../i18n/index.jsx'
 import LangSwitcher from '../components/LangSwitcher.jsx'
+import BernmobilLogo from '../components/BernmobilLogo.jsx'
+import TramIcon from '../components/TramIcon.jsx'
+import LineBadge from '../components/LineBadge.jsx'
 
-// Bern has Lines 6, 7, 8, 9 — Line 3 was retired decades ago
 const TRAM_LINES = ['6', '7', '8', '9']
 
 export default function HomeScreen({ onSpin, onBadges, badgeCount }) {
@@ -9,73 +11,84 @@ export default function HomeScreen({ onSpin, onBadges, badgeCount }) {
   const badgeKey = badgeCount === 1 ? 'home.badges' : 'home.badgesPlural'
 
   return (
-    <div className="relative flex flex-col min-h-screen bg-gradient-to-b from-red-950 via-red-800 to-red-700 text-white overflow-hidden">
-      {/* Decorative blur blobs */}
-      <div className="absolute -top-32 -left-32 w-80 h-80 rounded-full bg-red-900/50 blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-32 -right-32 w-80 h-80 rounded-full bg-red-900/50 blur-3xl pointer-events-none" />
-
-      {/* Top bar */}
-      <div className="relative z-10 flex items-center justify-between px-5 pt-10 pb-2">
-        <LangSwitcher />
-        <button
-          onClick={onBadges}
-          className="flex items-center gap-2 bg-white/15 hover:bg-white/25 active:scale-95 transition-all px-4 py-2 rounded-full text-sm font-semibold border border-white/20"
-        >
-          <span>🏅</span>
-          <span>{t(badgeKey, { count: badgeCount })}</span>
-        </button>
+    <div className="relative flex flex-col min-h-screen bg-white text-bm-ink overflow-hidden">
+      {/* Top bar — solid Bernmobil red with wordmark */}
+      <div className="bg-bm-red text-white">
+        <div className="px-4 h-14 flex items-center justify-between">
+          <BernmobilLogo className="h-6" />
+          <LangSwitcher />
+        </div>
+        <div className="h-[3px] bg-bm-amber" />
       </div>
 
-      {/* Hero */}
-      <div className="relative z-10 flex flex-col items-center justify-center flex-1 gap-7 px-6 text-center">
-        <div className="text-9xl select-none animate-float drop-shadow-2xl">🚃</div>
+      {/* Hero section with subtle Bernmobil-red wash */}
+      <div className="relative flex-1 flex flex-col">
+        <div className="absolute inset-x-0 top-0 h-[55%] bg-gradient-to-b from-bm-red to-bm-red-dark pointer-events-none" />
 
-        <div className="flex flex-col gap-0">
-          <p className="text-white/50 text-xs font-bold tracking-[0.3em] uppercase mb-2">Bern</p>
-          <h1 className="text-[clamp(2.5rem,12vw,3.75rem)] font-black tracking-tight leading-none uppercase whitespace-nowrap">
+        <div className="relative z-10 flex flex-col items-center text-center px-6 pt-8 pb-10 text-white">
+          <p className="text-white/75 text-[11px] font-black tracking-[0.35em] uppercase mb-2">
+            Bern · Tram · Roulette
+          </p>
+          <h1 className="text-[clamp(2rem,9vw,3.25rem)] font-black tracking-tight leading-[0.95] uppercase">
             {t('home.titleLine1')}
           </h1>
-          <h1 className="text-[clamp(2.5rem,12vw,3.75rem)] font-black tracking-tight leading-none uppercase text-amber-400 whitespace-nowrap">
+          <h1 className="text-[clamp(2rem,9vw,3.25rem)] font-black italic tracking-tight leading-[0.95] uppercase">
             {t('home.titleLine2')}
+            <span className="text-bm-amber">.</span>
           </h1>
-        </div>
 
-        <p className="text-white/70 text-base max-w-[260px] leading-relaxed">
-          {t('home.subtitle')}
-        </p>
-
-        {/* Tram line circles */}
-        <div className="flex flex-col items-center gap-2">
-          <div className="flex items-center gap-3">
-            {TRAM_LINES.map((line) => (
-              <span
-                key={line}
-                className="w-12 h-12 rounded-full bg-amber-400 text-red-950 font-black text-xl flex items-center justify-center shadow-lg shadow-black/40 border-2 border-amber-300/60"
-              >
-                {line}
-              </span>
-            ))}
-          </div>
-          {/* Decorative track */}
-          <div className="flex items-center w-52 gap-1">
-            <div className="h-px flex-1 bg-white/25" />
-            <div className="w-1.5 h-1.5 rounded-full bg-white/40" />
-            <div className="h-px flex-1 bg-white/25" />
-            <div className="w-1.5 h-1.5 rounded-full bg-white/40" />
-            <div className="h-px flex-1 bg-white/25" />
+          <div className="mt-7 -mb-6 animate-float drop-shadow-2xl">
+            <TramIcon className="w-56" line={TRAM_LINES[Math.floor(Math.random() * TRAM_LINES.length)]} />
           </div>
         </div>
-      </div>
 
-      {/* CTA */}
-      <div className="relative z-10 flex flex-col items-center gap-3 px-6 pb-12">
-        <button
-          onClick={onSpin}
-          className="w-full max-w-sm bg-amber-400 hover:bg-amber-300 active:scale-95 transition-all text-red-950 font-black text-xl py-5 rounded-2xl animate-glow-pulse"
-        >
-          {t('home.spin')}
-        </button>
-        <p className="text-white/35 text-xs text-center">{t('home.credit')}</p>
+        {/* Body card — overlapping the red hero */}
+        <div className="relative z-10 -mt-2 mx-4 bg-white rounded-2xl shadow-xl border border-bm-line p-6 flex flex-col items-center text-center">
+          <p className="text-bm-ink/75 text-sm leading-relaxed max-w-[320px]">
+            {t('home.subtitle')}
+          </p>
+
+          {/* Network strip — line badges in Bernmobil-red signage style */}
+          <div className="mt-6 w-full">
+            <p className="text-[10px] font-black tracking-[0.25em] uppercase text-bm-ink/45 mb-2">
+              Tram Network
+            </p>
+            <div className="flex items-center justify-center gap-2.5">
+              {TRAM_LINES.map((line) => (
+                <LineBadge key={line} line={line} size="md" />
+              ))}
+            </div>
+            <div className="mt-3 flex items-center w-full gap-1.5 px-2">
+              <div className="h-px flex-1 bg-bm-line" />
+              <div className="w-1.5 h-1.5 rounded-full bg-bm-line" />
+              <div className="h-px flex-1 bg-bm-line" />
+              <div className="w-1.5 h-1.5 rounded-full bg-bm-line" />
+              <div className="h-px flex-1 bg-bm-line" />
+            </div>
+          </div>
+        </div>
+
+        {/* CTA + badges */}
+        <div className="relative z-10 flex flex-col items-stretch gap-3 px-6 pt-6 pb-10">
+          <button
+            onClick={onSpin}
+            className="relative w-full bg-bm-red hover:bg-bm-red-dark active:scale-[0.98] transition-all text-white font-black text-lg py-4 rounded-xl uppercase tracking-wide shadow-md animate-pulse-ring"
+          >
+            {t('home.spin')}
+          </button>
+
+          <button
+            onClick={onBadges}
+            className="w-full bg-white hover:bg-bm-mist active:scale-[0.98] transition-all text-bm-ink font-bold py-3 rounded-xl border border-bm-line flex items-center justify-center gap-2"
+          >
+            <span aria-hidden="true">🏅</span>
+            <span>{t(badgeKey, { count: badgeCount })}</span>
+          </button>
+
+          <p className="text-bm-ink/40 text-[11px] text-center mt-1 leading-relaxed">
+            {t('home.credit')}
+          </p>
+        </div>
       </div>
     </div>
   )
