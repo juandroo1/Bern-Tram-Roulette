@@ -16,8 +16,8 @@
     "now": "Jetzt",
     "min": "{{n}} Min.",
     "platform": "Gleis {{p}}",
-    "accept": "Herausforderung annehmen! 🎯",
-    "respin": "Neu würfeln 🎲",
+    "accept": "Herausforderung annehmen",
+    "respin": "Anderes Ziel",
     "nextDepartures": "Nächste Abfahrten",
     "credit": "Direkte Trams ab Bern, Bahnhof · transport.opendata.ch"
   },

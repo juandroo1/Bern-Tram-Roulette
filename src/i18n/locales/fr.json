@@ -16,8 +16,8 @@
     "now": "Maintenant",
     "min": "{{n}} min",
     "platform": "Voie {{p}}",
-    "accept": "Accepter le défi ! 🎯",
-    "respin": "Relancer 🎲",
+    "accept": "Accepter le défi",
+    "respin": "Autre destination",
     "nextDepartures": "Prochains départs",
     "credit": "Trams directs depuis Berne gare · transport.opendata.ch"
   },

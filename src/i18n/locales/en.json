@@ -16,8 +16,8 @@
     "now": "Now",
     "min": "{{n}} min",
     "platform": "Platform {{p}}",
-    "accept": "Accept the Challenge! 🎯",
-    "respin": "Respin 🎲",
+    "accept": "Accept the Challenge",
+    "respin": "Try Another Stop",
     "nextDepartures": "Next departures",
     "credit": "Direct trams from Bern, Bahnhof · transport.opendata.ch"
   },
