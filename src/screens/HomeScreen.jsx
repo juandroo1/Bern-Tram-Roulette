@@ -13,8 +13,10 @@ export default function HomeScreen({ onSpin, onBadges, badgeCount }) {
 
   return (
     <div className="relative flex flex-col min-h-screen bg-white text-bm-ink overflow-hidden">
-      {/* Top bar — solid Bernmobil red with wordmark */}
-      <div className="bg-bm-red text-white">
+      {/* Top bar — solid Bernmobil red with wordmark.
+          The wrapper extends behind the iOS status bar so the camera /
+          signal / battery icons sit on red rather than overlapping content. */}
+      <div className="bg-bm-red text-white pt-[env(safe-area-inset-top)] pl-[env(safe-area-inset-left)] pr-[env(safe-area-inset-right)]">
         <div className="px-4 h-14 flex items-center justify-between">
           <BernmobilLogo className="h-6" />
           <LangSwitcher />
@@ -69,8 +71,8 @@ export default function HomeScreen({ onSpin, onBadges, badgeCount }) {
           </div>
         </div>
 
-        {/* CTA + badges */}
-        <div className="relative z-10 flex flex-col items-stretch gap-3 px-6 pt-6 pb-10">
+        {/* CTA + badges — bottom padding clears the iOS home indicator */}
+        <div className="relative z-10 flex flex-col items-stretch gap-3 px-6 pt-6 pb-[calc(2.5rem+env(safe-area-inset-bottom))]">
           <button
             onClick={onSpin}
             className="relative w-full bg-bm-red hover:bg-bm-red-dark active:scale-[0.98] transition-all text-white font-black text-lg py-4 rounded-xl uppercase tracking-wide shadow-md animate-pulse-ring"

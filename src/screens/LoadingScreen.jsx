@@ -8,9 +8,11 @@ export default function LoadingScreen({ status, error, onRetry, onBack }) {
   if (status === 'loading') {
     return (
       <div className="flex flex-col min-h-screen bg-bm-red text-white">
-        {/* Top bar with logo so loading still feels in-brand */}
-        <div className="px-4 h-14 flex items-center">
-          <BernmobilLogo className="h-6" />
+        {/* Top bar with logo — extended into the iOS status bar area */}
+        <div className="pt-[env(safe-area-inset-top)] pl-[env(safe-area-inset-left)] pr-[env(safe-area-inset-right)]">
+          <div className="px-4 h-14 flex items-center">
+            <BernmobilLogo className="h-6" />
+          </div>
         </div>
         <div className="h-[3px] bg-bm-amber" />
 

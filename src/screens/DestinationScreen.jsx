@@ -122,8 +122,8 @@ export default function DestinationScreen({ destination, departures, onAccept, o
         <p className="text-center text-bm-ink/40 text-[11px] px-4">{t('destination.credit')}</p>
       </div>
 
-      {/* Actions */}
-      <div className="px-4 pb-10 pt-2 flex flex-col gap-3 bg-bm-mist">
+      {/* Actions — bottom padding clears the iOS home indicator */}
+      <div className="px-4 pb-[calc(2.5rem+env(safe-area-inset-bottom))] pt-2 flex flex-col gap-3 bg-bm-mist">
         <button
           onClick={onAccept}
           className="w-full bg-bm-red hover:bg-bm-red-dark active:scale-[0.98] transition-all text-white font-black py-4 rounded-xl shadow-md text-base uppercase tracking-wide"
