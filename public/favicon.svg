@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- Bernmobil-red rounded square background -->
-  <rect width="64" height="64" rx="12" fill="#E2001A"/>
+  <!-- White rounded square background -->
+  <rect width="64" height="64" rx="12" fill="#FFFFFF"/>
 
-  <!-- Tram body — white side-view silhouette with streamlined nose on the left -->
+  <!-- Tram body — Bernmobil-red side-view silhouette with streamlined nose -->
   <path d="M8 28 C 8 22 11 18 17 18 L 51 18 Q 56 18 56 23 L 56 44 Q 56 48 51 48 L 13 48 Q 8 48 8 44 Z"
-        fill="#FFFFFF"/>
+        fill="#E2001A"/>
 
   <!-- Continuous window strip -->
   <rect x="12" y="22" width="40" height="11" rx="1.5" fill="#0E1116"/>
 
-  <!-- Window mullions -->
-  <g fill="#FFFFFF">
+  <!-- Window mullions in tram-body red -->
+  <g fill="#E2001A">
     <rect x="22" y="22" width="1.2" height="11"/>
     <rect x="32" y="22" width="1.2" height="11"/>
     <rect x="42" y="22" width="1.2" height="11"/>
