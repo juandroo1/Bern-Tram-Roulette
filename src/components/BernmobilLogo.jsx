@@ -6,6 +6,9 @@
 //   tone="light" (default) → white version, for use on red backgrounds.
 //   tone="dark"            → original red version, for use on white backgrounds.
 export default function BernmobilLogo({ className = '', tone = 'light' }) {
-  const src = tone === 'dark' ? '/bernmobil-logo.svg' : '/bernmobil-logo-white.svg'
+  // Prefix with BASE_URL so the asset resolves correctly when the app is
+  // served from a subpath (e.g. GitHub Pages: /<repo-name>/).
+  const file = tone === 'dark' ? 'bernmobil-logo.svg' : 'bernmobil-logo-white.svg'
+  const src = `${import.meta.env.BASE_URL}${file}`
   return <img src={src} alt="bernmobil" className={className} draggable={false} />
 }
