@@ -37,7 +37,7 @@ function BadgeDetailView({ badge, onBack }) {
     <div className="flex flex-col h-full bg-bm-mist">
       <TopBar title={badge.stopName} onBack={onBack} />
 
-      <div className="flex-1 flex flex-col gap-4 px-4 py-5 overflow-auto">
+      <div className="flex-1 min-h-0 flex flex-col gap-4 px-4 py-5 overflow-auto">
         {/* Trip recap */}
         <div className="bg-bm-ink text-white rounded-xl px-4 py-3 flex items-center gap-3 shadow ring-1 ring-black/30">
           <LineBadge line={badge.tramLine} size="lg" />
@@ -77,7 +77,7 @@ function BadgeDetailView({ badge, onBack }) {
         )}
       </div>
 
-      <div className="px-4 pb-[calc(2.5rem+env(safe-area-inset-bottom))] pt-2 bg-bm-mist">
+      <div className="flex-shrink-0 px-4 pb-[calc(2.5rem+env(safe-area-inset-bottom))] pt-2 bg-bm-mist">
         <button
           onClick={onBack}
           className="w-full bg-white hover:bg-bm-mist active:scale-[0.98] transition-all text-bm-ink/70 font-bold py-3 rounded-xl border border-bm-line"
@@ -108,7 +108,7 @@ export default function BadgesScreen({ badges, onBack, onClear }) {
     <div className="flex flex-col h-full bg-bm-mist">
       <TopBar title={t('badges.header')} onBack={onBack} rightSlot={countChip} />
 
-      <div className="flex-1 overflow-auto px-4 py-5">
+      <div className="flex-1 min-h-0 overflow-auto px-4 py-5">
         {badges.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-64 gap-4 text-center">
             <div className="text-6xl">🏅</div>
@@ -147,7 +147,7 @@ export default function BadgesScreen({ badges, onBack, onClear }) {
       </div>
 
       {badges.length > 0 && (
-        <div className="px-4 pb-[calc(2.5rem+env(safe-area-inset-bottom))] pt-2 bg-bm-mist">
+        <div className="flex-shrink-0 px-4 pb-[calc(2.5rem+env(safe-area-inset-bottom))] pt-2 bg-bm-mist">
           {confirmClear ? (
             <div className="bg-red-50 border border-red-200 rounded-xl p-4 flex flex-col gap-3">
               <p className="text-bm-red font-black text-sm text-center">{t('badges.clearConfirm')}</p>
