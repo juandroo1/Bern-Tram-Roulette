@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: auto;
+}
+
 @theme {
   --color-bm-red: #E2001A;
   --color-bm-red-dark: #B30016;

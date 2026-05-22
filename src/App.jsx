@@ -49,7 +49,7 @@ export default function App() {
   const alreadyEarned = destination && challenge ? hasBadge(destination.id, challenge.id) : false
 
   return (
-    <div className="max-w-md mx-auto min-h-screen">
+    <div className="max-w-md mx-auto h-dvh overflow-hidden">
       {screen === 'home' && (
         <HomeScreen onSpin={handleSpin} onBadges={() => setScreen('badges')} badgeCount={badges.length} />
       )}

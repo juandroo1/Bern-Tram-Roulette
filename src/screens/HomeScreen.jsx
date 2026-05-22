@@ -12,7 +12,7 @@ export default function HomeScreen({ onSpin, onBadges, badgeCount }) {
   const badgeKey = badgeCount === 1 ? 'home.badges' : 'home.badgesPlural'
 
   return (
-    <div className="relative flex flex-col min-h-screen bg-white text-bm-ink overflow-hidden">
+    <div className="relative flex flex-col h-full bg-white text-bm-ink overflow-hidden">
       {/* Top bar — solid Bernmobil red with wordmark.
           The wrapper extends behind the iOS status bar so the camera /
           signal / battery icons sit on red rather than overlapping content. */}

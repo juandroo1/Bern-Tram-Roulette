@@ -34,7 +34,7 @@ function BadgeDetailView({ badge, onBack }) {
   const challenge = findChallenge(badge.stopId, badge.challengeId)
 
   return (
-    <div className="flex flex-col min-h-screen bg-bm-mist">
+    <div className="flex flex-col h-full bg-bm-mist">
       <TopBar title={badge.stopName} onBack={onBack} />
 
       <div className="flex-1 flex flex-col gap-4 px-4 py-5 overflow-auto">
@@ -105,7 +105,7 @@ export default function BadgesScreen({ badges, onBack, onClear }) {
   )
 
   return (
-    <div className="flex flex-col min-h-screen bg-bm-mist">
+    <div className="flex flex-col h-full bg-bm-mist">
       <TopBar title={t('badges.header')} onBack={onBack} rightSlot={countChip} />
 
       <div className="flex-1 overflow-auto px-4 py-5">

@@ -38,7 +38,7 @@ export default function DestinationScreen({ destination, departures, onAccept, o
   const next = departures[0]
 
   return (
-    <div className="flex flex-col min-h-screen bg-bm-mist">
+    <div className="flex flex-col h-full bg-bm-mist">
       <TopBar title={t('destination.header')} onBack={onBack} />
 
       <div className="flex-1 flex flex-col gap-4 px-4 py-5 overflow-auto">

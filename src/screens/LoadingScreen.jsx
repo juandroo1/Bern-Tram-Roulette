@@ -7,7 +7,7 @@ export default function LoadingScreen({ status, error, onRetry, onBack }) {
 
   if (status === 'loading') {
     return (
-      <div className="flex flex-col min-h-screen bg-bm-red text-white">
+      <div className="flex flex-col h-full bg-bm-red text-white">
         {/* Top bar with logo — extended into the iOS status bar area */}
         <div className="pt-[env(safe-area-inset-top)] pl-[env(safe-area-inset-left)] pr-[env(safe-area-inset-right)]">
           <div className="px-4 h-14 flex items-center">
@@ -48,7 +48,7 @@ export default function LoadingScreen({ status, error, onRetry, onBack }) {
 
   if (status === 'error') {
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen bg-bm-mist gap-6 px-6 text-center">
+      <div className="flex flex-col items-center justify-center h-full bg-bm-mist gap-6 px-6 text-center">
         <div className="text-6xl">⚠️</div>
         <div>
           <h2 className="text-xl font-black text-bm-ink mb-2 uppercase tracking-tight">
@@ -71,7 +71,7 @@ export default function LoadingScreen({ status, error, onRetry, onBack }) {
 
   if (status === 'no_match') {
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen bg-bm-mist gap-6 px-6 text-center">
+      <div className="flex flex-col items-center justify-center h-full bg-bm-mist gap-6 px-6 text-center">
         <div className="text-6xl">😶‍🌫️</div>
         <div>
           <h2 className="text-xl font-black text-bm-ink mb-2 uppercase tracking-tight">
