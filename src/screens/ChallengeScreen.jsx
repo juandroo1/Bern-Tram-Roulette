@@ -72,7 +72,7 @@ export default function ChallengeScreen({ destination, challenge, nextDeparture,
       </div>
 
       {/* Actions — bottom padding clears the iOS home indicator */}
-      <div className="flex-shrink-0 px-4 pb-[calc(2.5rem+env(safe-area-inset-bottom))] pt-2 flex flex-col gap-3 bg-bm-mist">
+      <div className="flex-shrink-0 px-4 pb-[env(safe-area-inset-bottom)] pt-2 flex flex-col gap-2 bg-bm-mist">
         <button
           onClick={onComplete}
           className="w-full bg-bm-red hover:bg-bm-red-dark active:scale-[0.98] transition-all text-white font-black py-4 rounded-xl shadow-md text-base uppercase tracking-wide"

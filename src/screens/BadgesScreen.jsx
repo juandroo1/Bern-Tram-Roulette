@@ -77,7 +77,7 @@ function BadgeDetailView({ badge, onBack }) {
         )}
       </div>
 
-      <div className="flex-shrink-0 px-4 pb-[calc(2.5rem+env(safe-area-inset-bottom))] pt-2 bg-bm-mist">
+      <div className="flex-shrink-0 px-4 pb-[env(safe-area-inset-bottom)] pt-2 bg-bm-mist">
         <button
           onClick={onBack}
           className="w-full bg-white hover:bg-bm-mist active:scale-[0.98] transition-all text-bm-ink/70 font-bold py-3 rounded-xl border border-bm-line"
@@ -147,7 +147,7 @@ export default function BadgesScreen({ badges, onBack, onClear }) {
       </div>
 
       {badges.length > 0 && (
-        <div className="flex-shrink-0 px-4 pb-[calc(2.5rem+env(safe-area-inset-bottom))] pt-2 bg-bm-mist">
+        <div className="flex-shrink-0 px-4 pb-[env(safe-area-inset-bottom)] pt-2 bg-bm-mist">
           {confirmClear ? (
             <div className="bg-red-50 border border-red-200 rounded-xl p-4 flex flex-col gap-3">
               <p className="text-bm-red font-black text-sm text-center">{t('badges.clearConfirm')}</p>

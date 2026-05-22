@@ -72,7 +72,7 @@ export default function HomeScreen({ onSpin, onBadges, badgeCount }) {
         </div>
 
         {/* CTA + badges — bottom padding clears the iOS home indicator */}
-        <div className="relative z-10 flex flex-col items-stretch gap-3 px-6 pt-6 pb-[calc(2.5rem+env(safe-area-inset-bottom))]">
+        <div className="relative z-10 flex flex-col items-stretch gap-3 px-6 pt-6 pb-[calc(1rem+env(safe-area-inset-bottom))]">
           <button
             onClick={onSpin}
             className="relative w-full bg-bm-red hover:bg-bm-red-dark active:scale-[0.98] transition-all text-white font-black text-lg py-4 rounded-xl uppercase tracking-wide shadow-md animate-pulse-ring"

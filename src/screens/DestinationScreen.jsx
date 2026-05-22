@@ -41,7 +41,7 @@ export default function DestinationScreen({ destination, departures, onAccept, o
     <div className="flex flex-col h-full bg-bm-mist">
       <TopBar title={t('destination.header')} onBack={onBack} />
 
-      <div className="flex-1 min-h-0 flex flex-col gap-4 px-4 py-5 overflow-auto">
+      <div className="flex flex-col gap-3 px-4 py-3">
         {/* Departure board — real-Bernmobil-style */}
         <div className="bg-bm-ink rounded-xl overflow-hidden shadow-xl ring-1 ring-black/30 animate-flip-in">
           {/* Board header — like the real LED top strip */}
@@ -123,7 +123,7 @@ export default function DestinationScreen({ destination, departures, onAccept, o
       </div>
 
       {/* Actions — bottom padding clears the iOS home indicator */}
-      <div className="flex-shrink-0 px-4 pb-[calc(2.5rem+env(safe-area-inset-bottom))] pt-2 flex flex-col gap-3 bg-bm-mist">
+      <div className="mt-auto flex-shrink-0 px-4 pb-[env(safe-area-inset-bottom)] pt-2 flex flex-col gap-2 bg-bm-mist">
         <button
           onClick={onAccept}
           className="w-full bg-bm-red hover:bg-bm-red-dark active:scale-[0.98] transition-all text-white font-black py-4 rounded-xl shadow-md text-base uppercase tracking-wide"
