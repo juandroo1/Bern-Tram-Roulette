@@ -17,7 +17,7 @@
     "in": "In",
     "now": "Jetzt",
     "min": "{{n}} Min.",
-    "platform": "Gleis {{p}}",
+    "platform": "Kante {{p}}",
     "accept": "Herausforderung annehmen",
     "respin": "Anderes Ziel",
     "nextDepartures": "Nächste Abfahrten",
